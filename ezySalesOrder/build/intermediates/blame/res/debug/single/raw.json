@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\raw\\zxing_beep.ogg",
+        "source": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\bundles\\default\\res\\raw\\zxing_beep.ogg"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\d5ed6e37de3cd1355358061bc0433ebcb1375ca2\\output\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\d5ed6e37de3cd1355358061bc0433ebcb1375ca2\\output\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\raw\\zxing_beep.ogg",
+        "source": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\bundles\\default\\res\\raw\\zxing_beep.ogg"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\raw\\zxing_beep.ogg",
+        "source": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\zxing-android-embedded\\build\\intermediates\\bundles\\default\\res\\raw\\zxing_beep.ogg"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Users\\Munish kumar B\\.android\\build-cache\\a37427acf40f5a8b6382e84fa86124aca0fbb80b\\output\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\raw\\zxing_beep.ogg",
+        "source": "D:\\Projects\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\bundles\\default\\res\\raw\\zxing_beep.ogg"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Users\\Sathish Kumar T.M\\.android\\build-cache\\3ccc3e0965621fa017a809a3441df8838327d032\\output\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\raw\\zxing_beep.ogg",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\zxing-android-embedded\\build\\intermediates\\bundles\\default\\res\\raw\\zxing_beep.ogg"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Users\\Sathish Kumar T.M\\.android\\build-cache\\13482a3e69588a1845676e733417d3299eba8765\\output\\res\\raw\\gtm_analytics"
+    }
+]

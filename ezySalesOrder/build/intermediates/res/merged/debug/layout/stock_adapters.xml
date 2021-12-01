@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_item_style"
+    android:id="@+id/ss_listitem_layout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/rows2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

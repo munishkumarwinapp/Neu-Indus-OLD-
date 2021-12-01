@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ss_listitem_layout"
+    style="@style/list_item_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:id="@+id/linear"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/listbg_patch"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ss_no"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="slno"
+                android:textColor="@color/textview_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ss_con_no"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dip"
+                android:gravity="start|center"
+                android:text="slno"
+                android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ss_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="start|center"
+                android:maxLines="3"
+                android:text="Nameaahsdjjhs"
+                android:textColor="@color/textview_text_color"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ss_date"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="start|center"
+                android:maxLines="2"
+                android:text="12/30/1996"
+                android:textColor="@color/textview_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ss_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:gravity="end"
+                        android:maxLines="2"
+                        android:text="Duration"
+                        android:textColor="@color/textview_text_color"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/ss1_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:maxLines="2"
+                        android:text="-"
+                        android:textColor="@color/textview_text_color"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+
+                    <TextView
+                        android:id="@+id/ss_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:text="1230"
+                        android:textColor="@color/textview_text_color"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/ss_qty"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="1290"
+                android:textColor="@color/textview_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/cqty_layout"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ss_prod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="3dp"
+                        android:gravity="center"
+                        android:text="CQty"
+                        android:textColor="@color/textview_text_color"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/hipen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text= "-"/>
+
+                    <TextView
+                        android:id="@+id/ss_cqty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start"
+                        android:text="8"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lQty_layout"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ss_prodLqty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="3dp"
+                        android:gravity="center"
+                        android:text="LQty"
+                        android:textColor="@color/textview_text_color"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/hipen1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+
+                    <TextView
+                        android:id="@+id/ss_lqty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="3dp"
+                        android:gravity="start"
+                        android:text="8"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/sl_qty"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:hint="Qty"
+                android:imeOptions="actionNext"
+                android:visibility="gone"
+                android:inputType="number" >
+            </EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </FrameLayout>
+    </HorizontalScrollView>
+</LinearLayout>

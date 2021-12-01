@@ -1,0 +1,62 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@android:id/tabhost"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" >  
+  
+    <RelativeLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:orientation="vertical">  
+  
+        <FrameLayout  
+            android:id="@android:id/tabcontent"  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            android:background="#FFF" >  
+  
+        </FrameLayout>  
+  
+        <!-- TabWidget管理所有的选项卡，id名是android指定的 -->  
+        <TabWidget  
+            android:id="@android:id/tabs"  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            android:visibility="gone" />  
+  
+        <!-- Frame下放置单选群组替代TAB效果 -->  
+        <RadioGroup  
+            android:id="@+id/main_radio"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:background="#ccc"  
+            android:gravity="center_vertical"  
+            android:orientation="horizontal"  
+            android:layout_alignParentBottom="true" >  
+  
+            <RadioButton  
+                android:id="@+id/tab_icon_wifi"  
+               android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:checked="true"  
+                android:drawableTop="@mipmap/wifi"
+                android:text="Wifi" />  
+  
+            <RadioButton  
+                android:id="@+id/tab_icon_bluetooth"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:checked="false"  
+                android:drawableTop="@mipmap/bluetooth"
+                android:text="Bluetooth" />  
+  
+            <RadioButton  
+                android:id="@+id/tab_icon_setting"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:drawableTop="@mipmap/setting"
+                android:text="Language" />  
+  
+            
+        </RadioGroup>  
+    </RelativeLayout>  
+</TabHost>  

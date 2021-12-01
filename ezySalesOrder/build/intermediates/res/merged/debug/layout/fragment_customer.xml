@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dip"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/customerCode"
+                style="@style/edittext_style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_weight="0.60"
+                android:drawableRight="@drawable/ic_search"
+                android:ems="10"
+                android:hint="Customer Name"
+                android:imeOptions="actionDone"
+                android:inputType="text" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/edittext_style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_weight="0.40"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/date"
+                android:inputType="none" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_below="@+id/linearLayout1"
+            android:background="@drawable/header_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:text="Customer Code"
+                android:textColor="@color/title_text_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Customer Name"
+                android:textColor="@color/title_text_color"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listView"
+                style="@style/listview_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" >
+            </ListView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_marginBottom="31dp"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/skip_bg"
+            android:text="Skip" />
+    </RelativeLayout>
+
+</FrameLayout>

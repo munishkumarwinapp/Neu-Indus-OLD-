@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/list_item_style"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" 
+	android:descendantFocusability="blocksDescendants">
+	
+    <CheckBox
+            android:id="@+id/transfer_checkbox"
+            style="@style/checkbox_style"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:visibility="visible"/>
+	<TextView
+        android:id="@+id/batch_sl_id"
+        style="@style/list_text_style"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/batch_sl_no"
+        style="@style/list_text_style"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:visibility="gone"/>
+	<TextView
+		android:id="@+id/batch_prodcode"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" 
+		android:visibility="gone"/>
+	 <TextView
+        android:id="@+id/batch_prodname"
+        style="@style/list_text_style"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8" 
+        android:visibility="gone"/>
+	 
+	<TextView
+		android:id="@+id/batch_no"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" 
+		android:gravity="left"
+		android:text=""/>
+	<TextView
+		android:id="@+id/batch_expiryDate"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.6"
+		android:gravity="left"
+		android:text="" />
+	
+	<TextView
+		android:id="@+id/avl_cQty"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.8" 
+		android:visibility="gone"/>
+	<TextView
+		android:id="@+id/avl_lQty"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" 
+		android:visibility="gone"/>
+	<TextView
+		android:id="@+id/avl_Qty"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.8" 
+		android:visibility="gone"/>
+	
+	<TextView
+		android:id="@+id/batch_cQty"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.8" />
+	<TextView
+		android:id="@+id/batch_lQty"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.8" />
+	<TextView
+		android:id="@+id/batch_Qty"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.8" />
+	<TextView
+		android:id="@+id/batch_fQty"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" 
+		android:visibility="gone"/>
+	<TextView
+		android:id="@+id/batch_pcsPerCarton"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" 
+		android:visibility="gone"/>
+	
+	<TextView
+		android:id="@+id/batch_havebatch"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" 
+		android:visibility="gone"/>
+	
+	<TextView
+		android:id="@+id/batch_haveexpiry"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" 
+		android:visibility="gone"/>
+	
+	<TextView
+		android:id="@+id/remarks"
+		style="@style/list_text_style"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" 
+		android:visibility="gone"/>
+	
+</LinearLayout>

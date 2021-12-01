@@ -1,0 +1,111 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:weightSum="10" >  
+    
+    <LinearLayout
+        android:id="@+id/summary_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/summary_header" />
+    </LinearLayout>
+        
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/stocktakeDateTxtVw"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/stock_take_date"
+            android:textColorHint="@color/textview_text_color"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/stocktakeDateEdtxt"
+            style="@style/edittext_style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/ic_calendar"
+            android:editable="false"
+            android:hint="" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/stocktakelocTxtVw"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/location"
+            android:textColorHint="@color/textview_text_color"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/stocktakeLocEdtxt"
+            style="@style/edittext_style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/ic_loc"
+            android:editable="false" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/stocktakeRemarkEdtxt"
+            style="@style/edittext_style"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:hint="@string/remarks"
+            android:inputType="text" >
+        </EditText>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="5.5"
+        android:gravity="center|bottom"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/stocktakeAddProdBtn"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_product" />
+    </TableRow>
+</TableLayout>

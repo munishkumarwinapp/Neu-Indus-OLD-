@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="140dip"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3.5" >
+
+        <Button
+            android:id="@+id/stadj_alert_plus"
+            style="@style/button_style"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="2dp"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/stadj_alert_minus"
+            style="@style/button_style"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:text="-" />
+    </LinearLayout>
+
+</LinearLayout>

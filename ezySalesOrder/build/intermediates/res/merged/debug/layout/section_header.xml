@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:id="@+id/linearLayout4">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            style="@style/checkbox_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/custcode"
+            style="@style/list_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/sno"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:gravity="left|center"
+            android:text="abcd"
+            android:paddingLeft="30dp"
+            android:textColor="@color/d_gray"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:gravity="left|center"
+            android:text="abcd"
+            android:paddingLeft="30dp"
+            android:textColor="@color/d_gray"/>
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:gravity="left|center"
+            android:text="abcd"
+            android:paddingLeft="30dp"
+            android:textColor="@color/d_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/DelCustomerName"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/d_gray"
+            android:text="aaaaaaaaaaaaaaa" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        tools:text="Title test text"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_medium"
+        android:id="@+id/tvTitle"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/linearLayout4"
+        android:layout_toEndOf="@+id/linearLayout4"
+        android:layout_marginStart="14dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:support-fragment:25.1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.android/build-cache/163e762e2f3224bb82b5e794e16505b086a6b96f/output/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/72f1362e54d84d871cbb5fc0e00630f6b6cac65f/output/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/163e762e2f3224bb82b5e794e16505b086a6b96f/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/163e762e2f3224bb82b5e794e16505b086a6b96f/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/163e762e2f3224bb82b5e794e16505b086a6b96f/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/d19e9bb0f3ce67a077b293b8ff614d16e1a57a6f/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/d19e9bb0f3ce67a077b293b8ff614d16e1a57a6f/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d19e9bb0f3ce67a077b293b8ff614d16e1a57a6f/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/72f1362e54d84d871cbb5fc0e00630f6b6cac65f/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/72f1362e54d84d871cbb5fc0e00630f6b6cac65f/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/72f1362e54d84d871cbb5fc0e00630f6b6cac65f/output/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

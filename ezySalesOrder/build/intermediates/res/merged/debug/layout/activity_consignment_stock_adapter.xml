@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ss_listitem_layout"
+    style="@style/list_item_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dip"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="015dip"
+            android:background="@drawable/listbg_patch"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ss_slno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="slno"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/ss_name"
+                        style="@style/list_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="jfgjsfgjhkghkfjdhgdfd"
+                        tools:ignore="Suspicious0dp" />
+
+
+                    <TextView
+                        android:id="@+id/ss_prodcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="abcdefg"
+                        android:textColor="@color/textview_text_color"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/ss_pcs_carton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dip"
+                    android:gravity="top"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="23"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                   >
+
+                    <TextView
+                        android:id="@+id/ss_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center"
+                        android:text="slno"
+                        android:textColor="@color/textview_text_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/cqty_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/ss_prod"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_marginRight="3dp"
+                                    android:gravity="center"
+                                    android:text="CQty"
+                                    android:textColor="@color/textview_text_color"
+                                    android:textSize="16dp"
+                                    android:textStyle="italic" />
+
+                                <TextView
+                                    android:id="@+id/hipen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-" />
+
+                                <TextView
+                                    android:id="@+id/ss_cqty"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="start"
+                                    android:text="8"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:textStyle="italic" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lQty_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/ss_prodLqty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="3dp"
+                                android:gravity="center"
+                                android:text="LQty"
+                                android:textColor="@color/textview_text_color"
+                                android:textSize="16dp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/hipen1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/ss_lqty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
+                                android:text="8"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="italic" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/ic_edit_icon" />
+
+    </FrameLayout>
+
+    </HorizontalScrollView>
+</LinearLayout>

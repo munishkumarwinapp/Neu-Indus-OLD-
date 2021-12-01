@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.winapp.sot.ManualStockHeader">
+
+    <LinearLayout
+        android:id="@+id/invoicelistheaderlayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/header_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="23dip"
+            android:layout_weight=".4"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@drawable/ic_arrow_right"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/invoiceSno"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:gravity="center|left"
+            android:text="SO No"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/invoiceDate"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/date"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/sInvoiceCustomer"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/balance"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/InvoiceAmount"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/net_total"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_marginBottom="5dp"
+android:layout_weight="8.77"
+android:orientation="vertical"
+android:weightSum="8.5">
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dip"
+    android:background="@color/list_header_separator_color"/>
+
+<ListView
+    android:id="@+id/saleO_listView1"
+    style="@style/listview_style"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8.50">
+</ListView>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\anim\\push_up_out.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\src\\main\\res\\anim\\push_up_out.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\anim\\landinganimation.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\src\\main\\res\\anim\\landinganimation.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\anim\\bottom_sheet.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\src\\main\\res\\anim\\bottom_sheet.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\anim\\anim_translate.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\src\\main\\res\\anim\\anim_translate.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\anim\\bottom_sheet.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\src\\main\\res\\anim\\bottom_sheet.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\anim\\landinganimation.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\src\\main\\res\\anim\\landinganimation.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\anim\\anim_translate.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\src\\main\\res\\anim\\anim_translate.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\anim\\push_up_out.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\src\\main\\res\\anim\\push_up_out.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\anim\\push_left_in.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\src\\main\\res\\anim\\push_left_in.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\anim\\push_left_in.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\src\\main\\res\\anim\\push_left_in.xml"
+    }
+]

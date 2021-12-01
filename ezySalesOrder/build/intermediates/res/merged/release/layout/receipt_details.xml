@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/receipt_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:weightSum="8.7" >
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@drawable/home_bg"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:id="@+id/back_btn_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/left_separator"
+                android:contentDescription="@string/title_bar_left_button"
+                android:src="@mipmap/back_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pagetitle_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/page_Title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="Receipt Details"
+                android:textColor="@color/title_text_color"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inv_offlineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/offline_pattern_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scaleType="fitXY"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="8.7"
+        android:fillViewport="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/receipt_detail_no_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/receipt_detail_no_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Receipt No"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/receipt_detail_no_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint=" "
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/receipt_detail_invno_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/receipt_detail_invno_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Invoice No"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/receipt_detail_invno_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint=" "
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/receipt_detail_nettotal_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/receipt_detail_nettotal_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Net Total"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/receipt_detail_nettotal_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint=""
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/receipt_detail_paidamt_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/receipt_detail_paidamt_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Paid Amount"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/receipt_detail_paidamt_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint=""
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/receipt_detail_crdamt_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/receipt_detail_crdamt_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Credit Amount"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/receipt_detail_crdamt_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint=""
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

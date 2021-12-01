@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_item_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+     >
+
+    <TextView
+        android:id="@+id/idprod"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/idprodpalatte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/list_content_text_color"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/productsno"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/list_content_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/productcode"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/list_content_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/productname"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/list_content_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/productbarcode"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/list_content_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/productweight"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/list_content_text_color"
+        android:textSize="14sp" />
+
+</LinearLayout>

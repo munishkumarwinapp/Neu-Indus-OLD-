@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center_horizontal"
+    style="@style/list_item_style"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linear_checkbox"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/in_checkbox"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+             android:layout_marginLeft="2dp"
+            android:button="@drawable/checkbox" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linear_date"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/in_date"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="6.25"
+            android:background="@null"
+            android:gravity="center"
+            android:hint=""
+            android:singleLine="true"
+            android:textColorHint="@color/textview_text_color"
+            android:textSize="14sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_netvalue"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="2"
+ 		android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/in_netvalue"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="wwsxws"
+            android:singleLine="true"
+            android:textColorHint="@color/textview_text_color"
+            android:textSize="14sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_credit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/in_credit"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+        	android:layout_marginRight="1dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:singleLine="true"
+            android:textColorHint="@color/textview_text_color"
+            android:textSize="14sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_paid"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/in_paid"
+            android:layout_width="50dp"
+            android:layout_height="30dp" 
+            android:background="@null"
+            android:gravity="center"
+            android:hint=""
+            android:singleLine="true"
+             android:textColorHint="@color/textview_text_color"
+            android:textSize="14sp"
+            android:typeface="sans" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linear_balance"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/in_balance"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColorHint="@color/textview_text_color"
+            android:textSize="14sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/date_outer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@color/background_color"
+        android:layout_margin="2dp">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aa"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aa"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/date_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaa"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

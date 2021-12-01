@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/listdata_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@mipmap/box_bg"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/delcustomername"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.2"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:singleLine="true"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/dark_blue"
+                                android:text="gfgfgfg"/>
+
+                            <TextView
+                                android:id="@+id/customercode"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"
+                                android:singleLine="true"
+                                android:text="code"
+                                android:textSize="12dp"
+                                android:textStyle="italic"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/option_layout"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:layout_weight="0.1"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@mipmap/route_option_icon"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:id="@+id/address1"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="-"
+                    android:textSize="16dp"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/address2"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="-"
+                    android:textSize="16dp"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="StartTime"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="Remarks"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="RequestDeliveryTime"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/gray"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.75"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:id="@+id/starttime"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/remarks"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/requestdeliverytime"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

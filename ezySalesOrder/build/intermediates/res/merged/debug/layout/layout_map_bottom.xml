@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="bottom"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/current_tab"
+        android:layout_width="0dip"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:background="@drawable/ic_map_tab_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dip">
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginTop="2dip"
+            android:src="@mipmap/ic_loc_selection_img"/>
+
+        <TextView
+            android:id="@+id/location_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="@string/current"
+            android:textColor="#b3b3b3"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/route_tab"
+        android:layout_width="0dip"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:background="@drawable/ic_map_tab_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dip">
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginTop="2dip"
+            android:src="@mipmap/ic_route_unselection_img"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="@string/route"
+            android:textColor="#b3b3b3"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_tab"
+        android:layout_width="0dip"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:background="@drawable/ic_map_tab_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dip">
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginTop="2dip"
+            android:src="@mipmap/ic_tracking_unselection_img"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="@string/activity"
+            android:textColor="#b3b3b3"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

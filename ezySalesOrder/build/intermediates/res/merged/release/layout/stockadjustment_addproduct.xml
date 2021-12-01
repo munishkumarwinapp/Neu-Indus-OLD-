@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stAdjustproduct_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <!-- Added new feature -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/summary_header" />
+    </LinearLayout>
+    <!-- End -->
+
+    <com.winapp.util.VerticalScrollview
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.7"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/stadj_codelayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/stadjcodelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="7" >
+
+                <EditText
+                    android:id="@+id/stadj_codefield"
+                    style="@style/edittext_code_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="2.3"
+                    android:drawableRight="@drawable/ic_search"
+                    android:hint="  Code"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/stadj_namefield"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="4.75"
+                    android:background="@drawable/labelbg"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="Description"
+                    android:imeOptions="actionNext"
+                    android:inputType="none"
+                    android:paddingLeft="8dp"
+                    android:textColor="#3a3a3c"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stadj_carton_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/stadj_carton_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/header_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="6" >
+
+                    <TextView
+                        android:id="@+id/stadj_carton"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="Carton Qty"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_loose"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="Loose Qty"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_qty"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="Quantity"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/header_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/weightlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="6" >
+
+                        <EditText
+                            android:id="@+id/stadj_cartonQty"
+                            style="@style/edittext_style"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="2"
+                            android:hint="Carton Qty"
+                            android:imeOptions="actionNext"
+                            android:inputType="number" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/stadj_looseQty"
+                            style="@style/edittext_style"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="2"
+                            android:hint="Loose Qty"
+                            android:imeOptions="actionNext"
+                            android:inputType="number" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/stadj_qty"
+                            style="@style/edittext_style"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="2"
+                            android:hint="Qty"
+                            android:imeOptions="actionNext"
+                            android:inputType="number" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/stockadj_header_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3.5" >
+
+                        <TextView
+                            android:id="@+id/txt_adddetect"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1.1"
+                            android:gravity="center|left"
+                            android:text="Add/Detect"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:typeface="sans"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txt_stockinhand"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1.1"
+                            android:gravity="center|left"
+                            android:text=" Stock in hand"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:typeface="sans" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3.5" >
+
+                        <EditText
+                            style="@style/edittext_style"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="0.50"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:visibility="gone" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/stadj_plus"
+                            style="@style/button_style"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.55"
+                            android:text="+" />
+
+                        <Button
+                            android:id="@+id/stadj_minus"
+                            style="@style/button_style"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="0.55"
+                            android:text="-" />
+
+                        <EditText
+                            android:id="@+id/stadj_stock"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1.26"
+                            android:background="@drawable/labelbg"
+                            android:focusable="false"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:textColor="#3a3a3c"
+                            android:textSize="16sp"
+                            android:typeface="sans" >
+                        </EditText>
+
+                        <ImageView
+                            android:id="@+id/expand"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.4"
+                            android:src="@mipmap/expand" />
+
+                        <Button
+                            android:id="@+id/stadj_addProduct"
+                            style="@style/button_style"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="0.8"
+                            android:text="Add" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pcs_txt_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/list_header_color"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="4" >
+
+                        <TextView
+                            android:id="@+id/txt_uom"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text=" UOM"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:typeface="sans" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/txt_pcs"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text="Pcs per carton"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:typeface="sans" >
+                        </TextView>
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/txt_stock" -->
+                        <!-- android:layout_width="0dp" -->
+                        <!-- android:layout_height="25dp" -->
+                        <!-- android:layout_marginLeft="3dp" -->
+                        <!-- android:layout_marginRight="3dp" -->
+                        <!-- android:layout_weight="2" -->
+                        <!-- android:gravity="center|left" -->
+                        <!-- android:text="Stock" -->
+                        <!-- android:textColor="#FFFFFF" -->
+                        <!-- android:textSize="14sp" -->
+                        <!-- android:textStyle="bold" -->
+                        <!-- android:typeface="sans" > -->
+                        <!-- </TextView> -->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pcs_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:background="@drawable/header_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="4" >
+
+                        <EditText
+                            android:id="@+id/stadj_uom"
+                            android:layout_width="0dp"
+                            android:layout_height="38dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1.94"
+                            android:background="@drawable/labelbg"
+                            android:focusable="false"
+                            android:gravity="left|center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="none"
+                            android:paddingLeft="10dp"
+                            android:textSize="16sp" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/stadj_cartonPerQty"
+                            android:layout_width="0dp"
+                            android:layout_height="38dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1.95"
+                            android:background="@drawable/labelbg"
+                            android:focusable="false"
+                            android:gravity="left|center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="none"
+                            android:paddingLeft="10dp"
+                            android:textSize="16sp" >
+                        </EditText>
+
+                        <!-- <EditText -->
+                        <!-- android:id="@+id/stadj_stock" -->
+                        <!-- android:layout_width="0dp" -->
+                        <!-- android:layout_height="38dp" -->
+                        <!-- android:layout_marginLeft="6dp" -->
+                        <!-- android:layout_marginRight="3dp" -->
+                        <!-- android:layout_weight="1.94" -->
+                        <!-- android:background="@drawable/labelbg" -->
+
+
+                        <!-- android:focusable="false" -->
+                        <!-- android:gravity="left|center_vertical" -->
+                        <!-- android:imeOptions="actionNext" -->
+                        <!-- android:inputType="none" -->
+                        <!-- android:paddingLeft="10dp" -->
+                        <!-- android:textSize="16sp" > -->
+                        <!-- </EditText> -->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stadj_grid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/header_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="6" >
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Product Code"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:visibility="gone"  />
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="Name"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Price"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                    
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Qty"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/productFilterList"
+                    style="@style/listview_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.winapp.util.VerticalScrollview>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/header_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="6" >
+
+        <TextView
+            android:id="@+id/txt_total"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Total"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="sans" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_tax"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Tax"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="sans" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_netTotal"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Net Total"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="sans" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/header_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="6" >
+
+        <EditText
+            android:id="@+id/stadj_total"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="2"
+            android:background="@drawable/labelbg"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="0.00"
+            android:inputType="none"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/stadj_tax"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="2"
+            android:background="@drawable/labelbg"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="0.0000"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/stadj_netTotal"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="2"
+            android:background="@drawable/labelbg"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="0.00"
+            android:inputType="none"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans" >
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

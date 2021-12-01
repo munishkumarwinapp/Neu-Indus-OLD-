@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="1000dp"
+    android:minHeight="1000dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dip"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                />
+
+        </LinearLayout>
+
+        <com.jess.ui.TwoWayGridView
+            android:id="@+id/subImageGridView"
+            android:layout_width="match_parent"
+            android:layout_height="140dip"
+            app:cacheColorHint="#E8E8E8"
+            app:columnWidth="100dip"
+            app:gravity="center|top"
+            app:horizontalSpacing="7dp"
+            app:numColumns="auto_fit"
+            app:numRows="1"
+            app:rowHeight="120dip"
+            android:layout_margin="5dip"
+            app:scrollDirectionLandscape="horizontal"
+            app:scrollDirectionPortrait="horizontal"
+            app:stretchMode="spacingWidth"
+            app:verticalSpacing="7dp"
+            android:visibility="visible"
+            android:background="@android:color/white"/>
+        <ProgressBar
+            android:id="@+id/load"
+            style="?android:attr/progressBarStyleSmall"
+            android:indeterminateDrawable="@drawable/progress_bar"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip">
+        </ProgressBar>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/ic_close_grey" />
+
+</RelativeLayout>
+</LinearLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="-50dp" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_margin="5dip"
+                android:background="@drawable/item_box_theme4_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/productImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_pristiano" />
+
+
+                <com.jess.ui.TwoWayGridView
+                    android:id="@+id/subImageGridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:cacheColorHint="#E8E8E8"
+                    app:columnWidth="60dp"
+                    app:gravity="center"
+                    app:horizontalSpacing="16dp"
+                    app:numColumns="3"
+                    app:numRows="1"
+                    app:rowHeight="60dp"
+                    android:layout_margin="5dip"
+                    app:scrollDirectionLandscape="horizontal"
+                    app:scrollDirectionPortrait="horizontal"
+                    app:stretchMode="spacingWidthUniform"
+                    app:verticalSpacing="16dp"
+                    android:visibility="visible"
+                    android:background="@android:color/white"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:clickable="true"
+            android:src="@drawable/ic_close_grey" />
+    </FrameLayout>
+
+</LinearLayout>-->
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    &lt;!&ndash;<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:src="@drawable/ic_close_grey"
+            android:description="@null"
+            android:scaleType="fitStart" />
+    </LinearLayout>
+&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dip"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dip"
+       android:layout_weight="1"
+       android:layout_margin="5dip"
+       android:background="@drawable/item_box_theme4_bg"
+       android:orientation="vertical">
+
+           <ImageView
+               android:id="@+id/productImage"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/ic_pristiano" />
+
+
+
+   </LinearLayout>
+    <com.jess.ui.TwoWayGridView
+        android:id="@+id/subImageGridView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cacheColorHint="#E8E8E8"
+        app:columnWidth="60dp"
+        app:gravity="center"
+        app:horizontalSpacing="16dp"
+        app:numColumns="3"
+        app:numRows="1"
+        app:rowHeight="60dp"
+        android:layout_margin="5dip"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="horizontal"
+        app:stretchMode="spacingWidthUniform"
+        app:verticalSpacing="16dp"
+        android:visibility="visible"
+        android:background="@android:color/white"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:src="@drawable/ic_close_grey"
+        android:description="@null"
+        android:scaleType="fitStart" />
+</FrameLayout>-->

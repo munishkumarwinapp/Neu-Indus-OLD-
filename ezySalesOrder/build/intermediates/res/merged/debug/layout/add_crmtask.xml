@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/crmtask_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f7fd"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="8.5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/task_detail_title"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.62"
+                android:gravity="center"
+                android:text="Details"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/customer_view"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/task_gallery_title"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.62"
+                android:gravity="center"
+                android:text="Photo/Sign"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/linear_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f8f7fd"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/task_id_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/task_id_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:gravity="center_vertical"
+                        android:hint="Task Id"
+                        android:textColorHint="@color/crm_text"
+                        android:textSize="15sp"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/task_id_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/crm_edittext"
+                        android:hint=" "
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/edittext_text_color"
+                        android:textSize="15sp"
+                        android:typeface="sans" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/task_user_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/task_user_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dip"
+                        android:gravity="left"
+                        android:hint="Task User"
+                        android:textColorHint="@color/crm_text"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/task_user_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@drawable/crm_edittext"
+                        android:cursorVisible="false"
+                        android:drawableRight="@mipmap/crm_ic_search"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="5dip"
+                        android:textColor="@color/edittext_text_color"
+                        android:textSize="15sp"
+                        android:typeface="sans" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/task_name_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/task_name_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Task Name  *"
+                        android:textColorHint="@color/crm_text"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/task_name_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@drawable/crm_edittext"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/edittext_text_color"
+                        android:textSize="15sp"
+                        android:typeface="sans" >
+                    </EditText>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/task_desc_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/task_desc_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Task Description   *"
+                        android:textColorHint="@color/crm_text"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/task_desc_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@drawable/crm_edittext"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/edittext_text_color"
+                        android:textSize="15sp"
+                        android:typeface="sans" >
+                    </EditText>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/task_customer_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/task_customer_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Task Customer"
+                        android:textColorHint="@color/crm_text"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/task_customer_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@drawable/crm_edittext"
+                        android:cursorVisible="false"
+                        android:drawableRight="@mipmap/crm_ic_search"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="5dip"
+                        android:textColor="@color/edittext_text_color"
+                        android:textSize="15sp"
+                        android:typeface="sans" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/task_date_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/task_date_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Task Date"
+                        android:textColorHint="@color/crm_text"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/task_date_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@drawable/crm_edittext"
+                        android:cursorVisible="false"
+                        android:drawableRight="@mipmap/crm_ic_date"
+                        android:editable="false"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="5dip"
+                        android:textColor="@color/edittext_text_color"
+                        android:textSize="15sp"
+                        android:typeface="sans" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/task_duedate_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/task_duedate_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Due Date"
+                        android:textColorHint="@color/crm_text"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/task_duedate_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@drawable/crm_edittext"
+                        android:cursorVisible="false"
+                        android:drawableRight="@mipmap/crm_ic_date"
+                        android:editable="false"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="5dip"
+                        android:textColor="@color/edittext_text_color"
+                        android:textSize="15sp"
+                        android:typeface="sans" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/task_priority_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/task_priority_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Task Priority"
+                        android:textColorHint="@color/crm_text"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/task_priority_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@drawable/crm_spinner"
+                        android:entries="@array/crm_priority"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:padding="5dip"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16sp"
+                        android:typeface="sans" >
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/task_status_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/task_status_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dip"
+                        android:gravity="center_vertical"
+                        android:hint="Task Status"
+                        android:textColorHint="@color/crm_text"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/task_status_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@drawable/crm_spinner"
+                        android:entries="@array/crm_status"
+                        android:padding="5dip"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linear_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f8f7fd"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:padding="5dip"
+            android:visibility="gone"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:background="#61c2c8"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/camera_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_crm_camera" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#d3eff1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/camera_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:background="#d76259"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/sign_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_crm_signature" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffd4d1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/sign_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:background="#985fcb"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/map_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_crm_location" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#e0c3fb"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/task_address_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

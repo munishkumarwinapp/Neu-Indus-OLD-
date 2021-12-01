@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/crmtask_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f7fd"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f7fd"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/codelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/usercodefield"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/labelbg"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableRight="@drawable/ic_search"
+                android:focusable="false"
+                android:hint="User"
+                android:imeOptions="actionDone"
+                android:inputType="text" >
+            </EditText>
+
+            <requestFocus />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Datelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/starteditTextDate"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:editable="false"
+                android:hint="Start Date" />
+
+            <EditText
+                android:id="@+id/endeditTextDate"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:editable="false"
+                android:hint="End Date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btsearch"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:text="Search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f7fd" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:background="#f8f7fd"
+            android:orientation="vertical"
+            android:weightSum="8.5" >
+
+            <ListView
+                android:id="@+id/task_list"
+                style="@style/listview_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:background="#dcdce7"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add_icon"
+            android:layout_width="52dip"
+            android:layout_height="52dip"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="50dip"
+            android:layout_marginRight="15dip"
+            android:src="@mipmap/crm_add" />
+    </FrameLayout>
+
+</LinearLayout>

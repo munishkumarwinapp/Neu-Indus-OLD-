@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cashcollection_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@drawable/home_bg"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/left_separator"
+                android:contentDescription="@string/title_bar_left_button"
+                android:src="@mipmap/back_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/pageTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cash_collection"
+                android:textColor="@color/title_text_color"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/save_invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/right_separator"
+                android:contentDescription="@string/title_bar_right_button"
+                android:src="@mipmap/ic_save_img" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inv_offlineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/offline_pattern_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scaleType="fitXY"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.3"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#017DD3"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/csh_custname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="3.5"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="none"
+                    android:maxLines="2"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"></EditText>
+
+                <EditText
+                    android:id="@+id/csh_custcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="3.5"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:typeface="sans"></EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/totalpaid_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@mipmap/blue_side_view"
+                    android:text="Total Paid : 0.00"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/totalcredit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@mipmap/blue_side_view"
+                    android:text="Total Credit : 0.00"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/header_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="6" >
+
+            <TextView
+                android:id="@+id/btn_spinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="2"
+                android:background="@drawable/customer_spinner"
+                android:drawSelectorOnTop="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:spinnerMode="dropdown"
+                android:textColor="#3a3a3c"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/csh_amount"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="@string/amount"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/csh_credit"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="@string/credit"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@drawable/header_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="8" >
+
+            <EditText
+                android:id="@+id/csh_netamt"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="4.23"
+                android:gravity="center"
+                android:hint="@string/net_amount"
+                android:inputType="numberDecimal" >
+            </EditText>
+
+            <Button
+                android:id="@+id/csh_bt_split"
+                style="@style/button_style"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="2.1"
+                android:text="@string/split"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/csh_add"
+                style="@style/button_style"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:contentDescription="@string/add_button"
+                android:src="@mipmap/ic_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/csh_listheader"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@drawable/header_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <CheckBox
+                android:id="@+id/csh_checkall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:button="@drawable/checkbox" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="3.5"
+                android:gravity="center|left"
+                android:text="@string/invoice_no"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/net_total"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="3.5"
+                android:gravity="center"
+                android:text="@string/credit"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/paid"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/balance"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/total_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:fillViewport="true"
+            android:weightSum="6"
+            android:scrollbars="none"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="@string/totaloutstanding"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/csh_tot_outstanding"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/labelbg"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textColor="#3a3a3c"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_tot_salesreturn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Total Sales Return"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/csh_tot_salesreturn"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/labelbg"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textColor="#3a3a3c"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_remain_outstanding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Remaining Outstanding"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/csh_remaining_outstanding"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/labelbg"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textColor="#3a3a3c"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Paid Amount"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/csh_tot_paid"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/labelbg"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textColor="#3a3a3c"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Credit Amount"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/csh_tot_credit"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/labelbg"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textColor="#3a3a3c"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Balance Amount"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/csh_tot_balance"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/labelbg"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textColor="#3a3a3c"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Return Amount"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/csh_returnamt"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/labelbg"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textColor="#3a3a3c"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/salesreturn_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/credit_listheader"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@drawable/header_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="9" >
+
+                <CheckBox
+                    android:id="@+id/credit_checkall"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox" />
+
+                <TextView
+                    android:id="@+id/credit_txt1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="2"
+                    android:gravity="center|left"
+                    android:text="@string/sr_no"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/credit_txt2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/sr_date"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/credit_txt3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="@string/amount"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/credit_txt4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/credit"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:weightSum="7">
+
+                <ListView
+                    android:id="@+id/credit_list"
+                    style="@style/listview_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6" >
+                </ListView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="9" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/srTotalAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="0.00"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/srTotalCredit"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="0.00"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/signature_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dip"
+            android:visibility="gone" >
+
+             <ImageView
+                        android:id="@+id/sm_sign_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:contentDescription="@string/title_bar_left_button"
+                        android:src="@mipmap/ic_summ_sign" />
+
+                    <ImageView
+                        android:id="@+id/sm_signature"
+                        android:layout_width="0dip"
+                        android:layout_height="100dip"
+                        android:layout_marginBottom="1dip"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dip"
+                        android:layout_weight=".7"
+                        android:contentDescription="@string/title_bar_left_button"
+                        android:background="@drawable/labelbg" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/csh_list"
+            style="@style/listview_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"      
+        android:layout_weight="0.9"
+        android:background="@drawable/header_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2.2" >
+
+        <Button
+            android:id="@+id/csh_bt_invoice"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:text="@string/invoice" />
+
+        <Button
+            android:id="@+id/csh_bt_total"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:text="@string/total" />
+
+        <ImageView
+            android:id="@+id/salesreturn_menu"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.2"
+            android:src="@mipmap/ic_action_menu" />
+    </LinearLayout>
+
+</LinearLayout>

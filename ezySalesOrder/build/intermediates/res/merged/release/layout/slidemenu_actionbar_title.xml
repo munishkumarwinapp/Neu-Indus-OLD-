@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="39dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/search_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_separator"
+                android:contentDescription="@string/title_bar_right_button"
+                android:src="@mipmap/ic_find"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/date_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_separator"
+                android:contentDescription="@string/title_bar_right_button"
+                android:src="@mipmap/crm_date"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/custcode_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_separator"
+                android:contentDescription="@string/title_bar_right_button"
+                android:src="@mipmap/ic_new_search" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/login_loctn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.7"
+            android:text="HQ"
+            android:gravity="center"
+            android:background="@drawable/right_separator"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:visibility="gone"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/done_icon"
+                android:layout_width="80dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dip"
+                android:background="#333a66"
+                android:drawableLeft="@mipmap/crm_tick"
+                android:padding="7dip"
+                android:text=" Done"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/printer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/right_separator"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@mipmap/ic_menu_print"
+            android:visibility="gone"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/swipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/filter"
+            android:background="@drawable/right_separator"
+            android:paddingLeft="2dp"
+            android:layout_centerVertical="true"
+            android:paddingRight="2dp"
+            android:src="@mipmap/ic_orientation"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/right_separator"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@mipmap/ic_save_img"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_toLeftOf="@+id/linearLayout1"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/title_text_color"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:typeface="sans"/>
+
+
+</RelativeLayout>

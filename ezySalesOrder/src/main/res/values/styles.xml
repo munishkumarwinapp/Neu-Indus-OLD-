@@ -1,0 +1,331 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+    -->
+    <!--
+    <style name="AppBaseTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+        
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+    </style>
+    -->
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.Sherlock.Light">
+
+        <item name="android:actionBarStyle">@style/YOURTHEME.ActionBarStyle</item>
+<!--         <item name="actionBarStyle">@style/YOURTHEME.ActionBarStyle</item> -->
+    </style>
+
+    <style name="YOURTHEME.ActionBarStyle" parent="Widget.Sherlock.Light.ActionBar">
+
+        <item name="android:titleTextStyle">@style/YOURTHEME.ActionBar.TitleTextStyle</item>
+<!--         <item name="titleTextStyle">@style/YOURTHEME.ActionBar.TitleTextStyle</item> -->
+
+	<item name="android:background">@drawable/home_bg</item>
+    <item name="background">@drawable/home_bg</item>
+
+    </style>
+
+    <style name="YOURTHEME.ActionBar.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+
+        <!-- <item name="android:background">@drawable/home_bg</item> -->
+        <item name="background">@drawable/home_bg</item>
+    </style>
+
+    <style name="AppThemeNoBar" parent="Theme.Sherlock.Light">
+       <!-- <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>-->
+     <item name="android:windowNoTitle">true</item>
+	</style>
+    
+    <!-- Background theme. -->
+    <style name="btnStyleBeige" parent="@android:style/Widget.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#5d6153</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/buttonbg</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    <style name="btnStyleBlackpearl" parent="@android:style/Widget.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/actionbuttonbg</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    <style name="CustomStyleButton1" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/custom_button1</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    <style name="CustomCursorTheme" parent="@android:style/Theme.Holo.Light">
+
+        <!-- <item name="android:textSelectHandleLeft">@drawable/text_select_handle_left</item> -->
+        <!-- <item name="android:textSelectHandleRight">@drawable/text_select_handle_right</item> -->
+        <item name="android:textSelectHandle">@mipmap/text_select_handle_middle</item>
+    </style>
+
+    <style name="btnStyleBlack" parent="@android:style/Widget.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/custom_landing_btn</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    
+    
+    <!-- Textview styles -->
+    <style name="textview_style" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/textview_bg</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:padding">10dip</item>
+        <item name="android:textColor">@color/textview_text_color</item>
+        <item name="android:textColorHint">@color/textview_hint_text_color</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:lines">1</item>
+    </style>
+    <!-- Button styles -->
+    <style name="button_style" parent="android:Widget.Button">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    
+    <style name="button_search_style" parent="android:Widget.Button">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dip</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    
+     <!-- Styles related to tabs and its contents -->
+    <style name="tabview_style" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/tab_unselected</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    
+    <style name="home_activity_button_style" parent="android:Widget.Button">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:background">@drawable/home_button_bg</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:drawablePadding">5dip</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5dip</item>
+        <item name="android:drawableRight">@mipmap/arrow</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <!-- Edittext styles -->
+    <style name="edittext_style" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:textColor">@color/edittext_text_color</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawablePadding">5dip</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <!--<item name="android:lines">10</item>-->
+        <!--<item name="android:ellipsize">end</item>-->
+        <item name="android:maxLines">20</item>
+    </style>
+
+    <style name="stockreq_ed_style" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:textColor">@color/edittext_text_color</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:padding">10dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawablePadding">5dip</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+    <style name="edittext_code_style" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:textColor">@color/edittext_text_color</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:padding">8dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawablePadding">2dip</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="edittext_style_small" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:textColor">@color/edittext_text_color</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:padding">4dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        
+        <item name="android:textSize">@dimen/text_size_smallest</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+       <style name="barcode_edittext_style" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:textColor">@color/edittext_text_color</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:padding">10dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawablePadding">5dip</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:lines">5</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">5</item>
+    </style>
+
+    <style name="login_edittext_style" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/login_edittext_bg</item>
+        <item name="android:textColor">@color/login_edittext_text_color</item>
+        <item name="android:textColorHint">@color/login_hint_text_color</item>
+        <item name="android:drawablePadding">5dip</item>
+        <item name="android:layout_marginBottom">10dip</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:padding">10dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+<style name="button_style_small" parent="android:Widget.Button">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dip</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="search_edittext_style" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:textColor">@color/edittext_text_color</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:layout_marginBottom">5dip</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <!-- Checkbox styles -->
+    <style name="checkbox_style" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:checked">false</item>
+        <item name="android:textColor">@color/checkbox_text_color</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="checkbox_style_green" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector_green</item>
+        <item name="android:checked">false</item>
+        <item name="android:textColor">@color/checkbox_text_color</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <!-- Styles related to list view -->
+    <style name="listview_style" parent="android:Widget.ListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0.5dip</item>
+    </style>
+
+    <style name="list_item_style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:background">@drawable/list_item_bg</item>
+    </style>
+
+   <style name="list_text_style" parent="android:Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5dip</item>
+        <item name="android:textColor">@color/list_content_text_color</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    
+   <style name="barcode_edittext" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:textColor">@color/edittext_text_color</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:padding">2dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawablePadding">1dip</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+   <style name="PauseDialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/bottom_sheet</item>
+</style>
+
+   <style name="listitem_text_style" parent="android:Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">1dip</item>
+        <item name="android:paddingRight">1dip</item>
+        <item name="android:textColor">@color/list_content_text_color</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Checkbox styles -->
+    <style name="checkbox_style_map" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_bg</item>
+        <item name="android:checked">false</item>
+    </style>
+
+</resources>

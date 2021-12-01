@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:background="@color/list_header_color"
+    android:baselineAligned="false"
+    android:padding="8dp"
+    android:weightSum="5" >
+
+    <ImageView
+        android:id="@+id/lblListImage"
+        android:layout_width="0dip"
+        android:layout_height="30dp"
+        android:layout_weight=".5"
+        android:src="@mipmap/collapse" />
+
+    <TextView
+        android:id="@+id/lblListId"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:gravity="center|left"
+        android:text="200"
+        android:textColor="@color/title_text_color"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lblListSno"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:gravity="center|left"
+        android:text="200"
+        android:textColor="@color/title_text_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblListproductcode"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lblListProductName"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.7"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:text="ProductName"
+        android:textColor="@color/title_text_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblListCount"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight=".6"
+        android:gravity="center"
+        android:text="1000"
+        android:textColor="@color/title_text_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblListTotal"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.7"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="123456789.12364"
+        android:textColor="@color/title_text_color"
+        android:textStyle="bold" />
+
+</LinearLayout>

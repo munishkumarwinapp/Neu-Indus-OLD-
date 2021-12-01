@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">ezy SalesOrder</string>
+    <string name="action_settings">Settings</string>
+    <string name="returns_option">返回</string>
+    <string name="returns_sign">签名</string>
+    <string name="title_activity_validate_url">ValidateURL</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_loading_page">LoadingPage</string>
+    <string name="external_dir">GetSignature</string>
+    <string name="action_search">Search</string>
+    <string name="action_new">NewCustomer</string>
+    <string name="action_print">Printer</string>
+    <string name="searching_printers">Searching for printers&#8230;</string>
+    <string name="no_bluetooth_support">Your device doesn\'t support bluetooth</string>
+    <string name="bluetooth_disabled">Bluetooth has not enabled</string>
+    <string name="title_please_wait">Please Wait</string>
+    <string name="no_printers_found">No Printers Found</string>
+    <string name="unknown_printer">Unknown printer. Only Zebra MZ 320 printer is supported</string>
+    <string name="printed_successfully">Printed successfully</string>
+    <string name="unable_to_find_printer">Unable to find printer. Make sure the printer is switched ON</string>
+    <string name="connecting_to_printer">Connecting to printer&#8230;</string>
+    <string name="printing_in_progress">Printing in progress&#8230;</string>
+    <string name="is_not_valid_mac_address"> is not a valid MAC Address</string>
+    <string name="search_printer">Search Printer</string>
+    <string name="creating_file_for_printing">Creating file for printing&#8230;</string>
+    <string name="error_creating_file_for_printing">Error in creating file for printing</string>
+    <string name="generating_invoice">Generating Invoice for printing&#8230;</string>
+    <string name="generating_so">Generating SO for printing&#8230;</string>
+    <string name="generating_sr">Generating SR for printing&#8230;</string>
+    <string name="generating_receipt">Generating Receipt for printing&#8230;</string>
+    <string name="generating_do">Generating DO for printing&#8230;</string>
+    <string name="consignment_printpreview">Print Preview&#8230;</string>
+    <string name="generating_ps">Generating ProductStock for printing&#8230;</string>
+    <string name="error_configure_printer">Please configure your printer</string>
+    <string name="title_bar_left_button">Title bar left button</string>
+    <string name="title_bar_right_button">Title bar right button</string>
+    <string name="add_button">Add Button</string>
+    <string name="print">打印</string>
+    <string name="ok">知道</string>
+    <string name="generating_transfer">Generating Transfer for printing&#8230;</string>
+    <string name="downloading1">Downloading from server.</string>
+    <string name="downloading2">Downloading from server..</string>
+    <string name="downloading3">Downloading from server...</string>
+    <string name="downloading_general_settings">Downloading GeneralSettings&#8230;</string>
+    <string name="downloading_usermaster">Downloading UserMaster&#8230;</string>
+    <string name="downloading_get_company">Downloading GetCompany&#8230;</string>
+    <string name="downloading_get_customer">Downloading GetCustomer&#8230;</string>
+    <string name="downloading_get_currency">Downloading GetCurrency&#8230;</string>
+    <string name="downloading_get_serverdate">Downloading ServerDate&#8230;</string>
+    <string name="downloading_get_nextno">Downloading NextRunningNumber&#8230;</string>
+    <string name="downloading_get_location">Downloading GetLocation&#8230;</string>
+    <string name="downloading_get_userpermission">Downloading User Permission&#8230;</string>
+    <string name="downloading_get_category">Downloading GetCategory&#8230;</string>
+    <string name="downloading_get_subcategory">Downloading GetSubCategory&#8230;</string>
+    <string name="downloading_get_companylogo">Downloading GetCompanyLogo&#8230;</string>
+    <string name="downloading_get_product">Downloading GetProduct&#8230;</string>
+    <string name="downloading_get_productbarcode">Downloading GetProductBarcode&#8230;</string>
+    <string name="downloading_get_invoiceheader">Downloading GetInvoiceHeader&#8230;</string>
+    <string name="downloading_get_invoicedetail">Downloading GetInvoiceDetail&#8230;</string>
+    <string name="downloading_get_invoiceheaderbyinvoiceno">Downloading GetInvoiceHeaderByInvoiceNo&#8230;</string>
+    <string name="downloading_get_invoicecartondetail">Downloading GetInvoiceCartonDetail&#8230;</string>
+    <string name="data_downloaded_successfully">Data Downloaded Successfully&#8230;</string>
+    <string name="completed">Completed&#8230;</string>
+    <string name="data_uploaded_successfully">Data uploaded Successfully&#8230;</string>
+    <string name="customer_uploaded_successfully">Customer uploaded Successfully&#8230;</string>
+    <string name="invoice_uploaded_successfully">Invoice uploaded Successfully&#8230;</string>
+    <string name="receipt_uploaded_successfully">Receipt uploaded Successfully&#8230;</string>
+    <string name="so_uploaded_successfully">Sales Order uploaded Successfully&#8230;</string>
+    <string name="data_upload_failed">Data upload Failed&#8230;</string>
+    <string name="invoice_upload_failed">Invoice upload Failed&#8230;</string>
+    <string name="receipt_upload_failed">Receipt upload Failed&#8230;</string>
+    <string name="customer_upload_failed">Customer upload Failed&#8230;</string>
+    <string name="so_upload_failed">Sales Order upload Failed&#8230;</string>
+    <string name="error_downloading_data_no_network_connection">Error downloading data - No Network connection</string>
+    <string name="error_downloading_data">Error downloading data</string>
+    <string name="invoice_printpreview">Invoice Print Preview</string>
+    <string name="receipt_printpreview">Receipt Print Preview</string>
+    <string name="downloading_get_bank">Downloading GetBank&#8230;</string>
+    <string name="downloading_get_paymode">Downloading GetPayMode&#8230;</string>
+    <string name="downloading_get_invoiceheaderonlyhavebalance">Downloading InvoiceHeaderOnlyHaveBalance&#8230;</string>
+    <string name="downloading_get_receiptheader">Downloading GetReceiptHeader&#8230;</string>
+    <string name="downloading_get_receiptdetail">Downloading GetReceiptDetail&#8230;</string>
+    <string name="downloading_get_productstock">Downloading ProductStock&#8230;</string>
+    <string name="signimage_uploaded_successfully">Signature Image uploaded Successfully&#8230;</string>
+    <string name="signimage_upload_failed">Signature Image upload Failed&#8230;</string>
+
+    <!-- offline String -->
+    <string name="download">Download</string>
+    <string name="do_you_want_to_download_data">Do you want to download data</string>
+    <string name="yes">是</string>
+    <string name="cancel">取消</string>
+    <string name="downloading_get_area">Downloading GetArea&#8230;</string>
+    <string name="downloading_get_terms">Downloading GetTerms&#8230;</string>
+    <string name="downloading_get_customergroup">Downloading GetCustomerGroup&#8230;</string>
+    <string name="upload_data">Uploading&#8230;</string>
+    <string name="sync_data">Synchronizing data&#8230;</string>
+    <string name="upload_customer">Uploading Customer&#8230;</string>
+    <string name="upload_invoice">Uploading Invoice&#8230;</string>
+    <string name="upload_receipt">Uploading Receipt&#8230;</string>
+    <string name="switch_to_online">切换到线上</string>
+    <string name="switch_to_offine">切换到离线</string>
+
+    <string name="online_status">You have internet connection. Do you want to continue in online</string>
+    <string name="offline_status">You don\'t have internet connection. Do you want to continue in offline</string>
+    <string name="switch_to_online_status">Do you want to upload the data to server and switch to online?</string>
+    <string name="switch_to_offline_status">Do you want to download data from server and switch to offline?</string>
+    <string name="upload_status">Do you want to upload and synchronize the data</string>
+    <string name="no_data_upload">No Data to Upload&#8230;</string>
+    <!-- End -->
+
+    <string name="salesorder_printpreview">SalesOrder Print Preview</string>
+    <string name="deliveryorder_printpreview">DeliveryOrder Print Preview</string>
+    <string name="salesreturn_printpreview">Sales Return Print Preview</string>
+    <string name="stockrequest_printpreview">Stock Request Print Preview</string>
+    <string name="Transfer_printpreview">Transfer Print Preview</string>
+    <string name="gra_printpreview">GRA Print Preview</string>
+    <string name="error_showing_image_no_network_connection">Error showing image - No Network connection</string>
+    <string name="error_showing_image">No more image</string>
+    <string name="url_title_image">URL_Title_Image</string>
+    <string name="settings">设置</string>
+    <string name="version">Version : 2</string>
+    <string name="domain_url">Domain URL</string>
+    <string name="validate">Validate</string>
+    <string name="splash_title_image">Splash_Title_Image</string>
+    <string name="connecting">正在连接&#8230;</string>
+    <string name="copyright">© Winapp Solutions Pte Ltd 2017</string>
+    <string name="website">www.winapp.com.sg</string>
+    <string name="login_title_image">Login_Title_Image</string>
+    <string name="login">登录</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="remember_me">记住我的细节</string>
+    <string name="home_title_image">Home_Title_Image</string>
+    <string name="home_title_name">Frozen Management</string>
+    <string name="good_receive">接收货物</string>
+    <string name="sales_order">销售订单</string>
+    <string name="delivery_order">交付订单</string>
+    <string name="invoice">发票</string>
+    <string name="invoice_summary">Invoice Summary</string>
+    <string name="delivery_summary">Delivery Summary</string>
+    <string name="sales_return">销售回报</string>
+    <string name="receipts">收据</string>
+    <string name="customer_list">客户数据库</string>
+    <string name="product_stock">产品库存</string>
+    <string name="stock_request">股票要求</string>
+    <string name="transfer">股票转让</string>
+    <string name="catalog">目录</string>
+    <string name="title_bar_search_icon">Title Bar Search Icon</string>
+    <string name="title_name_gra">接收货物</string>
+    <string name="date">日期</string>
+    <string name="amount">数量</string>
+    <string name="start_date">开始日期</string>
+    <string name="end_date">完成日期</string>
+    <string name="new_button">New</string>
+    <string name="search">搜索</string>
+    <string name="sno">号码</string>
+    <string name="status">情况</string>
+    <string name="supplier_code">供应商号码</string>
+    <string name="supplier">供应商</string>
+    <string name="add_product">Add Product</string>
+    <string name="code">Code</string>
+    <string name="currency_code">Currency Code</string>
+    <string name="currency_name">Currency Name</string>
+    <string name="currency_rate">Currency Rate</string>
+    <string name="description">描述</string>
+    <string name="do_date">Do Date</string>
+    <string name="do_number">DO Number</string>
+    <string name="gra_date">GRA Date</string>
+    <string name="invoice_date">Invoice Date</string>
+    <string name="invoice_number">Invoice Number</string>
+    <string name="remarks">Remarks</string>
+    <string name="select_supplier">Select Supplier</string>
+    <string name="summary">Summary</string>
+    <string name="add">Add</string>
+    <string name="product_code">Product Code</string>
+    <string name="name">Name</string>
+    <string name="price">价钱</string>
+    <string name="carton_per_qty">Carton Per Qty</string>
+    <string name="carton_qty">纸箱数量</string>
+    <string name="loose_qty">单数数量</string>
+    <string name="foc">Foc</string>
+    <string name="net_total">净总额</string>
+    <string name="uom">UOM</string>
+    <string name="tax">税</string>
+    <string name="two_zeros">0.00</string>
+    <string name="four_zeros">0.0000</string>
+    <string name="discount">Discount</string>
+    <string name="qty">数量</string>
+    <string name="total">总金额</string>
+
+    <string-array name="titles">
+        <item>SalesOrder</item>
+        <item>Product</item>
+        <item>Customer</item>
+        <item>Invoice</item>
+        <item>Setting</item>
+    </string-array>
+    <string-array name="weight_status">
+        <item>Default</item>
+        <item>Exchange</item>
+        <item>Foc</item>
+    </string-array>
+    <string-array name="so_status">
+        <item>Open</item>
+        <item>InProgress Invoice</item>
+        <item>InProgress DO</item>
+        <item>Closed</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="sr_status">
+        <item>Open</item>
+        <item>InProgress</item>
+        <item>Closed</item>
+    </string-array>
+    <string-array name="status">
+        <item>Open</item>
+        <item>view</item>
+        <item>partial</item>
+        <item>Closed</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="invoice_status">
+        <item>未支付</item>
+        <item>付费</item>
+        <item>所有</item>
+        <item>POD 待定</item>
+    </string-array>
+
+    <string name="save">保存</string>
+    <string name="cncl">取消</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="location">地址/地方</string>
+    <string name="tot_item">Tot Item</string>
+    <string name="user">User</string>
+    <string name="stock_take_date">Stock Take Date</string>
+    <string name="stock_take">存货</string>
+    <string name="product_name"> ProductName</string>
+    <string name="pcs_per_carton">PCS Per Carton</string>
+    <string name="current_qty">Current Qty</string>
+    <string name="carton">Carton</string>
+    <string name="loose">Loose</string>
+    <string name="total_qty">全部数量</string>
+    <string name="update">Update</string>
+    <string name="stock_take_no">Stock TakeNo</string>
+    <string name="st_no">STNo</string>
+    <string name="clear_filters">Clear Filters</string>
+    <string name="apply">Apply</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub-category</string>
+    <string name="filter">搜索过滤</string>
+    <string name="units">Units</string>
+    <string name="image">ImageView</string>
+    <string name="select_carton_qty">Select Carton </string>
+    <string name="specification">Specification</string>
+    <string name="carton_price">Carton Price</string>
+    <string name="pcspercarton">PcsPerCarton</string>
+    <string name="invalid_product_code">Invalid Product Code</string>
+    <string name="no_sub_image_for_particular_product">No SubImage for Particular Product</string>
+    <string name="no_network">No Network Connection</string>
+    <string name="added">Added</string>
+    <string name="catalog_details">Catalog Detail</string>
+    <string name="title_activity_expense_header">ExpenseHeader</string>
+    <string name="title_activity_expense_add">Add Expense</string>
+
+    <string-array name="carton_status">
+        <item>0</item>
+        <item>12</item>
+        <item>24</item>
+        <item>36</item>
+        <item>48</item>
+        <item>60</item>
+    </string-array>
+
+    <string name="show_only_balance">Show Only Balance</string>
+    <string name="customer_code">客户代码</string>
+    <string name="customer_name">顾客姓名</string>
+    <string name="no_record_found">没有找到记录</string>
+
+    <string-array name="offline_data">
+        <item>SalesOrder</item>
+        <item>Invoice</item>
+        <item>Receipt</item>
+        <item>Customer</item>
+        <item>Products</item>
+    </string-array>
+    <string-array name="offline_status">
+        <item>Pending To Upload</item>
+        <item>All Offline Data</item>
+    </string-array>
+    <string-array name="crm_priority">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="crm_status">
+        <item>Open</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Hold</item>
+    </string-array>
+    <string-array name="sort_by">
+        <item>Sort By</item>
+        <item>Products</item>
+        <item>Category</item>
+        <item>SubCategory</item>
+    </string-array>
+
+    <string name="title_activity_customer_address">CustomerAddress</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="assigned">Assigned</string>
+    <string name="activity">Activity</string>
+    <string name="start_job">Start Job</string>
+    <string name="delivery_code">Delivery Code</string>
+    <string name="outletname">OutLetName</string>
+    <string name="take_pic_before_job">BEFORE START JOB</string>
+    <string name="take_pic_after_job">AFTER COMPLETE JOB</string>
+    <string name="no_record">No Record Found !</string>
+    <string name="additional_image">ADDITIONAL IMAGE</string>
+    <string name="signature">SIGNATURE</string>
+    <string name="remarks1">Remarks 1</string>
+    <string name="remarks2">Remarks 2</string>
+    <string name="jobstarttime">JobStartTime</string>
+    <string name="jobEndTime">JobEndTime</string>
+
+    <string-array name="merchandise_status">
+        <item>没完成</item>
+        <item>进行中</item>
+        <item>完全</item>
+    </string-array>
+
+    <string-array name="packed_status">
+        <item>Open</item>
+        <item>In Progress</item>
+        <item>Packed</item>
+        <item>All</item>
+    </string-array>
+
+    <string name="device_not_found">No device found!</string>
+    <string name="device_found" formatted="false">%s device%s found!</string>
+
+    <string name="title_activity_print">PrintActivity</string>
+    <string name="title_activity_bluetooth">BluetoothActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="scanning">scanning for devices</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="title_connecting">connecting</string>
+    <string name="title_not_connected">not connected</string>
+    <string name="title_connected_to">connected to</string>
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="fourinch_bluetooth">4 Inch Bluetooth</string>
+    <string name="threeinch_bluetooth">3 Inch Bluetooth Generic</string>
+    <string-array name="charsize">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string name="title_activity_wifi">WifiActivity</string>
+    <string name="title_select_device">Select a device to connect</string>
+    <string name="title_scanning">Scanning for devices&#8230;</string>
+    <string name="title_scan">Scan for devices</string>
+    <string name="title_bluetooth_disabled">Bluetooth is disabled</string>
+    <string name="title_connect">Connect</string>
+    <string name="title_address">Address</string>
+
+    <!--Map Key-->
+    <string name="google_map_key">AIzaSyCuh-pTsf-04BNpf32rtxIUiZD_fAl8VQI</string>
+
+
+    <string name="current">Current</string>
+    <string name="route">Route</string>
+    <!--
+        <string name="search">Search</string>
+    -->
+
+    <string name="sfa_version">V2.0</string>
+
+
+    <string name="attendance">Attendance</string>
+    <string name="history">历史</string>
+
+    <!-- Menu -->
+    <string name="merchandise_schedule">商品时间表</string>
+    <string name="merchandise">商品</string>
+    <string name="packing">打包清单</string>
+    <string name="delivery_verification">发货确认</string>
+    <string name="stock_adjustment">股票调整</string>
+    <string name="expense">费用</string>
+    <string name="overdue">已过期</string>
+    <string name="task">任务</string>
+    <string name="maps">Maps</string>
+
+    <!--- Settings -->
+    <string name="printer_type"> 打印机类型</string>
+    <string name="zebra_iMZ320">Zebra iMZ320</string>
+
+    <string name="zebra_iMZ320_4_inch">Zebra iMZ320 4 Inch</string>
+    <string name="printer_address"> Printer Address</string>
+    <string name="a4_wifi_direct">A4 Wifi Direct</string>
+    <string name="enable_print_by_default">默认情况下启用打印</string>
+
+    <string name="deliveryorderoninvoice_print_by_default"> 默认情况下，发票上的交货单打印</string>
+
+    <string name="display_all_location_data"> Display all location data</string>
+    <string name="pod_pending"> 交货地点待定</string>
+    <string name="on_invoice_show_product_on_list"> 上的发票显示产品</string>
+
+    <string name="from_catalog_create"> From catalog create</string>
+    <string name="no_of_copies"> 复印数量</string>
+
+    <string name="company_name"> 公司名</string>
+    <string name="location_name"> 位置名称</string>
+    <string name="login_user"> 登录用户</string>
+    <string name="area"> 地方</string>
+    <string name="van_driver"> 货车/司机</string>
+    <string name="offline"> Offline</string>
+    <string name="offline_data">Offline Data</string>
+    <string name="select_area">选择地方</string>
+    <string name="select_van_driver">选择货运/司机</string>
+    <string name="language">Language</string>
+
+    <string-array name="supported_languages">
+        <item>English</item>
+        <item>中文（简体）</item>
+    </string-array>
+    <string-array name="select_language">
+        <item>English</item>
+        <item>Chinese Simplified (中文 简)</item>
+    </string-array>
+    <string name="exit">关掉</string>
+    <string name="Do_you_want_to_exit">确定您要关闭？</string>
+    <string name="no">不是</string>
+
+
+
+    <string name="abs__action_bar_home_description">Navigate home</string>
+    <string name="abs__action_bar_up_description">Navigate up</string>
+    <string name="abs__action_menu_overflow_description">More options</string>
+    <string name="abs__action_mode_done">Done</string>
+    <string name="abs__activity_chooser_view_see_all">See all...</string>
+    <string name="abs__activitychooserview_choose_application">Choose an application</string>
+    <string name="abs__shareactionprovider_share_with">Share with</string>
+    <string name="abs__shareactionprovider_share_with_application">Share with <xliff:g id="application_name" example="Bluetooth">%s</xliff:g></string>
+   <string name="abs__searchview_description_search">Search</string>
+    <string name="abs__searchview_description_query">Search query</string>
+    <string name="abs__searchview_description_clear">Clear query</string>
+    <string name="abs__searchview_description_submit">Submit query</string>
+    <string name="abs__searchview_description_voice">Voice search</string>
+
+    <string name="product_search">产品搜索</string>
+    <string name="go">走</string>
+
+    <string name="not_paid">未支付</string>
+    <string name="paid">支付</string>
+    <string name="all">所有</string>
+    <string name="invoice_no">发票号码</string>
+    <string name="balance">平衡</string>
+    <string name="totaloutstanding">总超出</string>
+    <string name="returns">返回</string>
+    <string name="cash_collection">现金收集</string>
+    <string name="edit_invoice">编辑发票</string>
+    <string name="delete_invoice">删除发票</string>
+    <string name="print_preview">打印预览</string>
+    <string name="print_delivery_order">打印送货单</string>
+    <string name="send_email">发电子邮件</string>
+
+    <string name="credit">信用</string>
+    <string name="net_amount">净 量</string>
+    <string name="split">分裂</string>
+    <string name="total_paid">总 付费</string>
+    <string name="total_credit">总 信用</string>
+
+    <string name="sr_no">销售回报 数</string>
+    <string name="sr_date">销售回报 日期</string>
+    <string name="extra_amount">额外 量</string>
+
+    <string name="total_received">总 接收</string>
+
+    <string name="enter_from_date">输入 从 日期</string>
+    <string name="enter_to_date">输入 至 日期</string>
+
+    <string name="warning">警告</string>
+    <string name="update_warning">您的手机已更新为较新版本。请联系您的系统管理员来更新服务器。</string>
+    <string name="do_you_want_to_update">新版本可用。你要更新吗？</string>
+    <string name="not_update_warning">您的手机未使用较新版本更新。请联系您的系统管理员进行更新。</string>
+    <string name="total_amount">总金额</string>
+    <string name="receipts_no">收据号</string>
+    <string name="update_pcs">无法更新 每箱纸</string>
+    <string name="upload">上传/同步</string>
+
+
+    <string name="english">English</string>
+    <string name="chinese">中文（简体）</string>
+    <string name="change_language">Change Language</string>
+    <string name="lanugage">Language</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="over_due">过期的</string>
+
+    <string name="details">Details</string>
+    <string name="analysis">Analysis</string>
+    <string name="purchase">Purchase</string>
+    <string name="sales">Sales</string>
+    <string name="cost">Cost</string>
+    <string name="profit">Profit</string>
+    <string name="unitcost">Unit Cost</string>
+    <string name="averagecost">Average Cost</string>
+    <string name="fprice">Fprice</string>
+    <string name="wholesaleprice">WholeSale Price</string>
+    <string name="retail_price">Retail Price</string>
+    <string name="margin">Margin</string>
+    <string name="data">Data</string>
+    <string name="chart">Chart</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="group_by">Group By</string>
+    <string name="purchase_vs_sales">Purchase vs Sales</string>
+
+    <!-- Permission -->
+    <string name="permission_request_title">Requesting Location Permission </string>
+    <string name="app_permission_notice">GPS permission allows us to access location data. Please allow in App Settings for additional functionality.</string>
+    <string name="permission_refused">Permission Denied, You cannot access location data.</string>
+
+    <string name="delivery_ordernew">Delivery Order New</string>
+    <string name="turn_on_flashlight">Turn on Flashlight</string>
+    <string name="turn_off_flashlight">Turn off Flashlight</string>
+</resources>

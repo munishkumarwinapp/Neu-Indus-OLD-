@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-xlarge-v4\\abs__screen_action_bar.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\debug\\res\\layout-xlarge-v4\\abs__screen_action_bar.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-xlarge-v4\\abs__screen_action_bar.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\debug\\res\\layout-xlarge-v4\\abs__screen_action_bar.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-xlarge-v4\\abs__screen_action_bar_overlay.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\debug\\res\\layout-xlarge-v4\\abs__screen_action_bar_overlay.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-xlarge-v4\\abs__screen_action_bar_overlay.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\debug\\res\\layout-xlarge-v4\\abs__screen_action_bar_overlay.xml"
+    }
+]

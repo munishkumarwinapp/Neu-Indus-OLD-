@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_item_style"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:orientation="horizontal"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/lbprid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblsno"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:paddingTop="5dp"
+        android:textColor="@color/textview_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1.55"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/textview_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lbcartoncount"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text=""
+       android:textColor="@color/textview_text_color"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/edit" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/del" />
+
+</LinearLayout>

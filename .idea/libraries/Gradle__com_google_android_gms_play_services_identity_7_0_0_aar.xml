@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-identity:7.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/3acf202dab8c348df4a88f1adf7e0c9b25e562e4/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/3acf202dab8c348df4a88f1adf7e0c9b25e562e4/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3acf202dab8c348df4a88f1adf7e0c9b25e562e4/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/9dc2eaa036f04ecdd5137230f55a17041036bd08/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/9dc2eaa036f04ecdd5137230f55a17041036bd08/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/9dc2eaa036f04ecdd5137230f55a17041036bd08/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/ce86bc922bb6c5f14add6503e4d73b86dd46861f/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/ce86bc922bb6c5f14add6503e4d73b86dd46861f/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/ce86bc922bb6c5f14add6503e4d73b86dd46861f/output/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

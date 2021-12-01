@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/productstock_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:weightSum="8.7" >
+    
+<LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@drawable/home_bg"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:id="@+id/back_btn_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/left_separator"
+                android:contentDescription="@string/title_bar_left_button"
+                android:src="@mipmap/back_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pagetitle_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"  >
+
+            <TextView
+                android:id="@+id/page_Title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8.7"
+        android:fillViewport="true"
+		android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/pro_detail_code_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pro_detail_code_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Product Code"
+                    android:textColor="@color/textview_text_color"
+                	android:textSize="15sp"
+                	android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pro_detail_code_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:paddingLeft="3dp"
+                    android:hint=" "
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pro_detail_name_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pro_detail_name_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Product Name"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pro_detail_name_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint=" "
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pro_detail_catcode_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pro_detail_catcode_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Category Code"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pro_detail_catcode_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:hint=""
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+           
+             <LinearLayout
+                android:id="@+id/pro_detail_subcode_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pro_detail_subcode_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Sub CategoryCode"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pro_detail_subcode_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint=""
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+             <LinearLayout
+                android:id="@+id/pro_detail_suppliercode_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pro_detail_suppliercode_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Supplier Code"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pro_detail_suppliercode_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint=""
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pro_detail_umo_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pro_detail_umo_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="UOM Code"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pro_detail_umo_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint=""
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pro_detail_carton_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pro_detail_carton_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="PcsPerCarton"
+                    android:editable="false"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pro_detail_carton_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:hint=""
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:paddingLeft="3dp"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pro_detail_retprice_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pro_detail_retprice_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Retail Price"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pro_detail_retprice_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint=""
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pro_detail_wholeprice_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pro_detail_wholeprice_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="WholeSalePrice"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pro_detail_wholeprice_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:hint=""
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/edittext_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cust_detail_taxperc_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pro_detail_taxperc_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="HaveTax"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pro_detail_taxperc_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:textColor="@color/edittext_text_color"
+                    android:hint=""
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:paddingLeft="3dp"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pro_detail_spec_ll"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pro_detail_spec_txt"
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="Specification"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pro_detail_spec_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/labelbg"
+                    android:textColor="@color/edittext_text_color"
+                    android:hint=""
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:paddingLeft="3dp"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:typeface="sans" >
+                </EditText>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@mipmap/calendar_top" >
+
+        <RelativeLayout
+            android:id="@+id/previous"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/cal_arrow_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/button_bg"
+            android:text="asdfdsfdsf"
+            android:textColor="#000000"
+            android:gravity="top"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/next"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/cal_arrow_right" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="7"
+        android:stretchMode="columnWidth" />
+
+</LinearLayout>

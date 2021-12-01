@@ -1,0 +1,312 @@
+[
+    {
+        "outputFile": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w480dp-v13\\values-w480dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 111,
+                    "endColumn": 72,
+                    "endOffset": 179
+                },
+                "from": {
+                    "file": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 111,
+                        "endColumn": 72,
+                        "endOffset": 179
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 184,
+                    "endColumn": 61,
+                    "endOffset": 241
+                },
+                "from": {
+                    "file": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 184,
+                        "endColumn": 61,
+                        "endOffset": 241
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w480dp-v13\\values-w480dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 111,
+                    "endColumn": 72,
+                    "endOffset": 179
+                },
+                "from": {
+                    "file": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 111,
+                        "endColumn": 72,
+                        "endOffset": 179
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 184,
+                    "endColumn": 61,
+                    "endOffset": 241
+                },
+                "from": {
+                    "file": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 184,
+                        "endColumn": 61,
+                        "endOffset": 241
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w480dp-v13\\values-w480dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 111,
+                    "endColumn": 72,
+                    "endOffset": 179
+                },
+                "from": {
+                    "file": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 111,
+                        "endColumn": 72,
+                        "endOffset": 179
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 184,
+                    "endColumn": 61,
+                    "endOffset": 241
+                },
+                "from": {
+                    "file": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 184,
+                        "endColumn": 61,
+                        "endOffset": 241
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w480dp-v13\\values-w480dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 111,
+                    "endColumn": 72,
+                    "endOffset": 179
+                },
+                "from": {
+                    "file": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 111,
+                        "endColumn": 72,
+                        "endOffset": 179
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 184,
+                    "endColumn": 61,
+                    "endOffset": 241
+                },
+                "from": {
+                    "file": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 184,
+                        "endColumn": 61,
+                        "endOffset": 241
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w480dp-v13\\values-w480dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 111,
+                    "endColumn": 72,
+                    "endOffset": 179
+                },
+                "from": {
+                    "file": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 111,
+                        "endColumn": 72,
+                        "endOffset": 179
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 184,
+                    "endColumn": 61,
+                    "endOffset": 241
+                },
+                "from": {
+                    "file": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 184,
+                        "endColumn": 61,
+                        "endOffset": 241
+                    }
+                }
+            }
+        ]
+    }
+]

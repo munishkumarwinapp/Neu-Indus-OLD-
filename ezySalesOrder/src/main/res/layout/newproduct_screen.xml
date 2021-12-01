@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newproduct_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:weightSum="10" >
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal" 
+        android:fillViewport="true">
+    <LinearLayout
+        android:id="@+id/parentLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        
+        <LinearLayout
+            android:id="@+id/editText1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@+id/codefield"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:hint="Code"
+                android:imeOptions="actionNext"
+                android:inputType="text" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/descriptionview"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:hint="Description"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:scrollbars="horizontal"
+                >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weightLabellayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@+id/getStrtsEnds"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="Barcode"                 
+                style="@style/barcode_edittext_style">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weightLabel2layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/btn_strts"
+                style="@style/button_style"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.6"
+                android:text="Starts On" />
+
+            <EditText
+                android:id="@+id/startson"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.4"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_ends"
+                style="@style/button_style"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.6"
+                android:text="Ends On" />
+
+            <EditText
+                android:id="@+id/endson"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:text="Have Batch"
+                android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:text="Have Expiry"
+                android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:text="Have MFD"
+               android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weightlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/weightlabel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Weight"
+               android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/weightfield"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal">
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/Categorylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/catlabel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Category"
+                android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/Categoryfield"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_search"
+                android:imeOptions="actionNext"
+                android:inputType="text" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SubCategorylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/subcatlabel"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Sub Category"
+                android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/SubCategoryfield"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_search"
+                android:imeOptions="actionNext"
+                android:inputType="text" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/uomlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/uomcodelabell"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="UOM code"
+                android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/uom"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_search"
+                android:imeOptions="actionNext"
+                android:inputType="text" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/PPClayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/PPCLabel"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Pieces per carton"
+                android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/piecespercarton"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:text="1" >
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/cartonPriceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/cartonlabel"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Carton Price"
+                android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/cartonPrice"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:text="1" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/unitsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/unitslabel"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Unit Price"
+                android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/units"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:text="1"></EditText>
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/binLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/cartonlabels"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Bin"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+
+                <EditText
+                    android:id="@+id/binfield"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/ic_search"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" >
+                </EditText>
+
+                <!--<Spinner-->
+                    <!--android:id="@+id/bin"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:layout_marginLeft="6dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/customer_spinner"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:textColor="@color/title_text_color"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:typeface="sans">-->
+
+                <!--</Spinner>-->
+
+
+            </LinearLayout>
+  </LinearLayout>
+  </ScrollView>
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/add"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="1dp"
+                android:text="Save" />
+        </LinearLayout>
+  
+
+</LinearLayout>

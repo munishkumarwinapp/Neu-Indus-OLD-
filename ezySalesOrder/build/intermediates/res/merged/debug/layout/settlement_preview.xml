@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical" >
+
+    <!--  <LinearLayout
+         android:id="@+id/sort_ll"
+          android:layout_width="match_parent"
+      android:layout_height="0dp"
+       android:layout_weight=".1"
+       android:weightSum="1"
+       android:gravity="center"
+       android:visibility="gone"
+      android:orientation="horizontal" >
+      <TextView
+           android:id="@+id/sort"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+             android:layout_weight="1"
+               android:gravity="left"
+               android:textStyle="bold"
+           android:text="TextView" />
+      </LinearLayout> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/sno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="TextView" />
+
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="TextView" />
+
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="TextView"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/consignmentNoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/consignmentNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mnfjhdgjfdjf"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="end"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foc_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/foc_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Foc" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=" :" />
+
+        <TextView
+            android:id="@+id/foc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="3dp"
+            android:textStyle="bold"
+            android:text="TextView" />
+    </LinearLayout>
+
+</LinearLayout>

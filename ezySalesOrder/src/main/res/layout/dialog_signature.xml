@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dip"
+                android:background="#f7f7f7">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:background="#f7f7f7"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dip"
+            android:background="@drawable/cust_bg_white_bg"
+            android:gravity="left"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center|left"
+                    android:hint="Photo / Signature"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    >
+                </TextView>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center|left"
+                    android:hint="Signature"
+                    android:textSize="12sp"
+                    >
+                </Button>
+
+                <ImageView
+                    android:id="@+id/route_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dip"
+                    android:gravity="center|left"
+                    android:maxLines="2"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="5dip"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="sans">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center|left"
+                    android:hint="Photo"
+                    android:textSize="12sp"
+                    >
+                </Button>
+
+                <ImageView
+                    android:id="@+id/route_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dip"
+                    android:gravity="center|left"
+                    android:maxLines="3"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="5dip"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/customer_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center|left"
+                    android:hint="Comments"
+                    android:textColorHint="#a7a7a7"
+                    android:textSize="12sp"
+                    >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/route_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dip"
+                    android:gravity="center|left"
+                    android:maxLines="3"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="5dip"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:hint="@string/delivery_code"
+                    android:textColorHint="#a7a7a7"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    android:visibility="gone">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/deliveryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="5dip"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="sans"
+                    android:visibility="gone">
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dip"
+                android:gravity="bottom|center">
+
+                <Button
+                    android:id="@+id/route_save"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="100dip"
+                    android:layout_height="35dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/btn_bg"
+                    android:text="Save"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/cancel"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="100dip"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/cncl"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

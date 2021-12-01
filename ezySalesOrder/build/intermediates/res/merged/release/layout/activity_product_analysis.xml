@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/productanalysis_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.winapp.sotdetails.ProductAnalysisActivity">
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/header_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="9" >
+
+        <!-- Product Name -->
+
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:singleLine="true"
+            android:text="Product Name"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/price_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2.5"
+            android:singleLine="true"
+            android:text="Pcs"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/cqty_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:singleLine="true"
+            android:text="Purchase Quantity"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/lqty_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1.1"
+            android:singleLine="true"
+            android:text="Loose"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/product_list"
+            style="@style/listview_style"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.32"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal"
+        android:background="@drawable/header_bg">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:text="Total Profit   :"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/total_profit"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/merchandiseMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/Datelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/date"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:focusable="false"
+                android:ems="10"
+                android:hint="Date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/user"
+                style="@style/edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:drawableRight="@drawable/ic_search"
+                android:focusable="true"
+                android:hint="User"
+                android:imeOptions="actionDone"
+                android:inputType="text" >
+            </EditText>
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+             android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+             <EditText
+                android:id="@+id/customerName_filter"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:ems="10"
+                android:hint="Customer Name" />
+             <TextView
+                 android:id="@+id/van_name"
+                android:background="@drawable/edittext_normal"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/edittext_text_color"
+                android:gravity="left|center_vertical"
+                 android:text="" />
+            <EditText
+                android:id="@+id/user_van_filter"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:ems="10"
+                android:visibility="gone"
+                 android:drawableRight="@drawable/ic_search"
+                android:hint="Van / User" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/headerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+             android:background="@drawable/header_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/customer_outletname"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_marginLeft="5dip"
+                android:text="Customer / Outlet Name"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/order_no"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center|right"
+                android:text="Order No"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginRight="10dip"
+                android:typeface="sans" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="8.50"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listView"
+            style="@style/listview_style"
+            android:layout_width="match_parent"
+              android:divider="@android:color/transparent"
+  			android:dividerHeight="10dp"    
+        	android:layout_margin="5dp"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

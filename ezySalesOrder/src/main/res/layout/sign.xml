@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="3" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:maxLength="30"
+            android:text="Please Sign below ..."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="316dip"
+        android:layout_height="340dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_selector"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+      android:layout_margin="5dp"
+         android:gravity="center"
+        android:orientation="horizontal" >
+    
+        <Button
+                    android:id="@+id/cancel"
+                    style="@style/button_style"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="35dip"
+                    android:layout_margin="2dp"
+                    android:text="Cancel" />
+        <Button
+                    android:id="@+id/clear"
+                    style="@style/button_style"
+                   android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="35dip"
+                    android:layout_margin="2dp"
+                    android:text="Clear" />
+        
+          <Button
+                    android:id="@+id/getsign"
+                    style="@style/button_style"
+                   android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="35dip"
+                    android:layout_margin="2dp"
+                    android:text="Save" />
+    </LinearLayout>
+
+</LinearLayout>
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:weightSum="3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            
+            android:gravity="center_vertical"
+            android:maxLength="30"
+            android:text="Please Sign below ..."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="340dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/border_selector"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+     <LinearLayout
+     android:id="@+id/linearLayout2"
+     android:layout_width="320dp"
+     android:layout_height="490dp"
+     android:layout_weight="5.5"
+     android:orientation="horizontal" >
+          </LinearLayout>
+   
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        
+        android:layout_weight="1"
+        
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    style="@style/button_style"
+                    android:text="Cancel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    style="@style/button_style"
+                    android:text="Clear" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/getsign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    style="@style/button_style"
+                    android:text="Save" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout> -->

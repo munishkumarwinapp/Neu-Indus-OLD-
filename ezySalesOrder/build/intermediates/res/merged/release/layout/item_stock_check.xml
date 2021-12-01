@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="5dip"
+    android:background="@drawable/listbg_patch"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center|left"
+        android:layout_weight="3"
+        android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        android:paddingLeft="7dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/black" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dip">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/inTimeLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center|left"
+                android:text="InTime : "
+                android:paddingLeft="5dip"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center|left"
+                android:text="Code"
+                android:paddingLeft="5dip"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:id="@+id/in_time"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/outTimeLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center|right"
+                android:text="OutTime : "
+                android:paddingLeft="5dip"
+                android:layout_gravity="right"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center|right"
+                android:text="Qty"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black"
+                android:id="@+id/out_time"
+                android:textStyle="italic"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

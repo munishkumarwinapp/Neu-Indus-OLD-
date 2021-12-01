@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <!-- Product Name -->
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="#717171"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <!-- Product Code -->
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textColor="#717171"
+                android:textSize="14sp" />
+
+            <!-- Quantity -->
+
+            <TextView
+                android:id="@+id/Quantity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textColor="#ba4a4a"
+                android:textSize="14sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/productCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="#717171"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/SubCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="#717171"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/UomCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="#717171"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/PcsPerCarton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="#717171"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/WholesalePrice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="#717171"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" 
+                android:visibility="visible"/>
+ <TextView
+                android:id="@+id/retailprice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="#717171"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" 
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/Specification"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="#717171"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/ProductImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="#717171"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" 
+                android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" > 
+    <!-- 定义HorizontalScrollView，为里面的组件添加水平滚动条 --> 
+    <HorizontalScrollView 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:id="@+id/sampletextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print Language" />
+	
+
+   
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignLeft="@+id/sampletextView"
+        android:layout_below="@+id/sampletextView"
+        >
+        <RadioButton
+        android:id="@+id/Englishradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="English" />
+
+    <RadioButton
+        android:id="@+id/Schineseradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="Simplified Chinese" />
+    <RadioButton
+        android:id="@+id/Thairadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="Thai" />
+     <RadioButton
+        android:id="@+id/Vietnamradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="Vietnam" />
+    </RadioGroup>
+
+
+</RelativeLayout>
+</HorizontalScrollView> 
+</ScrollView>

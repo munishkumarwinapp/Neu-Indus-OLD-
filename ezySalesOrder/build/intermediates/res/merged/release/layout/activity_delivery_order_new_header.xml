@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent_layout"
+              android:background="@color/gray">
+
+    <LinearLayout
+        android:id="@+id/username_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/donew_userCode"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/labelbg"
+            android:drawableRight="@drawable/ic_search"
+            android:focusable="false"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:hint="@string/user"
+            android:imeOptions="actionDone"
+            android:inputType="text" >
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tag_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/all_tab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@mipmap/route_tab_select"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_small"
+            android:text="All" />
+
+        <Button
+            android:id="@+id/open_tab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Open"
+            android:background="@mipmap/route_tab_unselect"/>
+
+        <Button
+            android:id="@+id/closed_tab"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@mipmap/route_tab_unselect"
+            android:textSize="@dimen/text_size_small"
+            android:text="Closed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/datelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/date"
+            style="@style/edittext_style"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="4.05"
+            android:cursorVisible="false"
+            android:drawableRight="@mipmap/ic_calendar"
+            android:focusable="false"
+            android:hint="Date">
+        </EditText>
+
+    </LinearLayout>
+
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:visibility="visible"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"/>
+
+    <LinearLayout
+        android:id="@+id/listlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/headerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/header_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_marginLeft="5dip"
+                android:text="Customer Name"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/route_btn"
+                style="@style/button_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:text="Full Route" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="8.50"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <!--
+             <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/list_header_separator_color" />
+        -->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/deliO_listView1"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp">
+        </android.support.v7.widget.RecyclerView>
+
+        <ExpandableListView
+            android:id="@+id/expandableListView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:childDivider="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:groupIndicator="@null"
+            android:visibility="gone" >
+        </ExpandableListView>
+    </LinearLayout>
+
+
+</LinearLayout>

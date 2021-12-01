@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.winapp.SFA"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <permission
+        android:name="com.winapp.SFA.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.winapp.SFA.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+
+    <!-- <uses-feature android:name="android.hardware.camera" android:required="false"/> -->
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/winapp_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <!-- android:name="com.winapp.util.MyApplication" -->
+        <!-- android:name="com.winapp.zxing.MainActivity" -->
+
+        <activity
+            android:name="com.winapp.fwms.SplashScreen"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppThemeNoBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.winapp.fwms.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.fwms.LandingActivity"
+            android:configChanges="orientation|screenSize"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.fwms.StockInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.fwms.AddSupplier"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winapp.fwms.AddProduct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.fwms.NewProduct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winapp.fwms.NewProductList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winapp.fwms.Summary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winapp.fwms.AndroidTabLayoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winapp.fwms.FWMSValidateURL"
+            android:label="@string/title_activity_validate_url"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winapp.fwms.Settings"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.SalesAddProduct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.SalesSummary"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.SalesOrderCustomer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.DeliveryCustomer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.DeliveryAddProduct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.DeliverySummary"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.InvoiceCustomer"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.InvoiceAddProduct"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <!-- android:windowSoftInputMode="adjustResize|stateAlwaysHidden" /> -->
+        <activity
+            android:name="com.winapp.sot.InvoiceSummary"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.CashInvoiceCustomer"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.CashInvoiceAddProduct"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <!-- android:windowSoftInputMode="adjustResize|stateAlwaysHidden" /> -->
+        <activity
+            android:name="com.winapp.sot.CashInvoiceSummary"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.CaptureSignature"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.winapp.sot.InvoiceCashCollection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.GraHeader"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winapp.sot.GraCustomer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.GraAddProduct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.GraSummary"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winapp.printer.PrinterFinder"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.SalesReturnCustomer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.SalesReturnAddProduct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.SalesReturnSummary"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sotdetails.ProductStockActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sotdetails.ProductStockDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sotdetails.CustomerListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sotdetails.AddCustomer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.StockRequestHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.StockRequestHeaderDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.StockRequestAddProduct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.StockRequestSummary"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.TransferAddProduct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.TransferHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.TransferHeaderDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.TransferSummary"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.SalesOrderHeader"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.InvoiceHeader"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.CashInvoiceHeader"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.DeliveryOrderHeader"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.SalesReturnHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ReceiptHeader"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ReceiptDetails"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.printer.InvoicePrintPreview"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.printer.ReceiptPrintPreview"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.printer.CommonPreviewPrint"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sotdetails.StockOtherLocation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.AddBarcode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sot.AddBarcodeSummary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sot.StockTakeHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sot.StockTakeAddProduct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.winapp.sot.StockTakeSummary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.StockAdjustmentHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sot.StockAdjustmentAddproduct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.StockAdjustmentSummary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sot.InvoiceReturn"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sot.RouteHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.offline.OfflineDataView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sotdetails.ExpenseHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sotdetails.ExpenseAdd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sotdetails.ExpenseSummary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sotdetails.OverdueHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sotdetails.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sotdetails.OutstandingSummary"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sotdetails.OutstandingDetails"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sotdetails.AppMessage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sotdetails.AppMessageDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sotdetails.CRMTaskActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sotdetails.CRMTaskAdd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.catalog.SOCatalogActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.googlemaps.MapActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_map_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.winapp.sotdetails.CustomerAddress"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sot.MerchandiseHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.sot.MerchandiseDetailHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.winapp.sotdetails.DeliveryVerificationHeader"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sotdetails.DeliveryVerificationDetails"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sotdetails.PackingHeader"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.MerchandiseSchedule"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.winapp.sot.MerchandiseAddSchedule"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.winapp.sotdetails.PackingDetails"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.printcube.printcube.MainActivity"
+            android:label="@string/title_activity_bluetooth" />
+        <activity
+            android:name="com.winapp.printcube.printcube.PrintActivity"
+            android:label="@string/title_activity_print" />
+        <activity
+            android:name="com.winapp.printcube.printcube.BluetoothActivity"
+            android:label="@string/title_activity_bluetooth" />
+        <activity
+            android:name="com.winapp.printcube.printcube.SettingActivity"
+            android:label="@string/title_activity_setting" />
+        <activity
+            android:name="com.winapp.printcube.printcube.WifiActivity"
+            android:label="@string/title_activity_wifi" />
+        <activity
+            android:name="com.winapp.printer.DeviceListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.MapModules.MapsHome"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.crm.AttendanceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity
+            android:name="com.winapp.crm.HistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+        <activity android:name="com.winapp.trackwithmap.RouteMapActivity" />
+        <activity
+            android:name="com.winapp.sotdetails.ProductStockDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.trackwithmap.DeliveryOrderNewHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <service android:name="com.winapp.trackuser.AppLocationService" />
+
+        <activity
+            android:name="com.winapp.sot.MerchandiseBrand"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name="com.winapp.sot.MerchandiseAddProduct" />
+        <activity android:name="com.winapp.sot.MerchandiseSummary" />
+        <activity android:name="com.winapp.sot.MerchandiseBrandPhotoScreen" />
+        <activity
+            android:name="com.winapp.zxing.CustomScannerActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.zxing.SmallCaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.winapp.zxing.ContinuousCaptureActivity" />
+        <activity
+            android:name="com.winapp.printer.RoutePrintPreview"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.winapp.sotdetails.ProductAnalysisActivity" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentCustomer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentAddProduct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentSummary"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentReturnHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentReturnCustomer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentReturnMultiSummary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentReturn"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentStockTakeHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentStockTakeCustomer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentStockTakeSummary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.winapp.sot.ConsignmentStockHeader"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.winapp.sot.ConsignmentReturnAddProduct" />
+        <activity android:name="com.winapp.sot.ConsignmentInvoiceHeader" />
+        <activity android:name="com.winapp.sotdetails.ExpenseAddCustomer" />
+        <activity android:name="com.winapp.sot.ManualStockHeader" />
+        <activity android:name="com.winapp.sot.ManualAddStockTake" />
+        <activity android:name="com.winapp.sot.ManualStockSummary" />
+        <activity android:name="com.winapp.sot.QuickTransferHeader" />
+        <activity android:name="com.winapp.sot.QuickTransferAddProduct" />
+        <activity android:name="com.winapp.sot.SettlementHeader" />
+        <activity android:name="com.winapp.sot.SettlementMainHeader" />
+        <activity android:name="com.winapp.printer.SettlementPrintPreview" />
+        <activity android:name="com.winapp.sot.SettlementAddDenomination"></activity>
+    </application>
+
+</manifest>

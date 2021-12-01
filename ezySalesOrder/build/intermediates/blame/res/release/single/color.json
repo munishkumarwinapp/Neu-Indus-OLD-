@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\abs__primary_text_holo_dark.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\b3c19c2028982c5175961ab860f3b6e8bb84fba0\\output\\res\\color\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\abs__primary_text_holo_light.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\e1f2073ee6e31967791adbb3108095612b160077\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\e1f2073ee6e31967791adbb3108095612b160077\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\e1f2073ee6e31967791adbb3108095612b160077\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\abs__primary_text_disable_only_holo_light.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\e1f2073ee6e31967791adbb3108095612b160077\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\b3c19c2028982c5175961ab860f3b6e8bb84fba0\\output\\res\\color\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\b3c19c2028982c5175961ab860f3b6e8bb84fba0\\output\\res\\color\\common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\abs__primary_text_holo_light.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\abs__primary_text_disable_only_holo_light.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\abs__primary_text_holo_dark.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\abs__primary_text_disable_only_holo_dark.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\abs__primary_text_disable_only_holo_dark.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\color\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\b3c19c2028982c5175961ab860f3b6e8bb84fba0\\output\\res\\color\\common_signin_btn_text_dark.xml"
+    }
+]

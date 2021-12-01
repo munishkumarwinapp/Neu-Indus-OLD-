@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:recyclerview-v7:23.2.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.android/build-cache/5fb434c4c26636c9307fd7e23cdc20dbb14f173a/output/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e69118d313a88569d1ff6204f35386adfee90ef1/output/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/5fb434c4c26636c9307fd7e23cdc20dbb14f173a/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/5fb434c4c26636c9307fd7e23cdc20dbb14f173a/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/5fb434c4c26636c9307fd7e23cdc20dbb14f173a/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/0c79d380a646d932b1c2bf4222e74e547048ed56/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/0c79d380a646d932b1c2bf4222e74e547048ed56/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/0c79d380a646d932b1c2bf4222e74e547048ed56/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e69118d313a88569d1ff6204f35386adfee90ef1/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/e69118d313a88569d1ff6204f35386adfee90ef1/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/e69118d313a88569d1ff6204f35386adfee90ef1/output/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

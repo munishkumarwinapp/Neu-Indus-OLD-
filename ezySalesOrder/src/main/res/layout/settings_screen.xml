@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/settings_parent"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_color"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/offlineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/offline_pattern_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scaleType="fitXY"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="horizontal"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- <ScrollView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:background="@color/background_color" -->
+            <!-- android:fillViewport="true" -->
+            <!-- android:orientation="vertical" -->
+            <!-- android:weightSum="5.9" > -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:background="@color/background_color" -->
+            <!-- android:orientation="vertical" > -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/version_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/sfa_version"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ed_url"
+                    style="@style/edittext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:cursorVisible="false"
+                    android:drawableRight="@mipmap/edit_ic"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:padding="2dp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/printerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/printertypelbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/printer_type"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans">
+                </TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="6dp"
+                    >
+
+                        <RadioButton
+                            android:id="@+id/zebra_radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="@string/zebra_iMZ320"/>
+
+                    <RadioButton
+                        android:id="@+id/zebra_radio_4inch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/zebra_iMZ320_4_inch"/>
+
+                        <RadioButton
+                            android:id="@+id/fourinch_radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="@string/fourinch_bluetooth"/>
+                    <RadioButton
+                        android:id="@+id/three_inch_bluetooth_radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/threeinch_bluetooth"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/printeraddress_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/printeraddress"
+                            style="@style/edittext_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:drawableRight="@drawable/ic_search"
+                            android:hint="@string/printer_address"
+                            android:inputType="textPersonName"
+                            android:padding="2dp"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:typeface="sans">
+                        </EditText>
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:id="@+id/a4wifi_radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/a4_wifi_direct"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/enableprinterLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/enableprinterswitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/enable_print_by_default"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/enableDOprinterLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/enableDOprinterswitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:paddingLeft="3dp"
+                    android:text="@string/deliveryorderoninvoice_print_by_default"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/defaultlocationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Switch
+                    android:id="@+id/displayalllocationdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/display_all_location_data"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pod_pending_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/pod_pending"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/pod_pending"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Invoiceaddproducttab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/invoiceaddproduct_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/on_invoice_show_product_on_list"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/enablestocktakelayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/enablestocktake"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="StockTake Showlist"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/catalogLayout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/catalogtypelbl"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="1dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/from_catalog_create"
+                android:textColor="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans">
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/catalog_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="6dp"
+                >
+
+            <RadioButton
+                android:id="@+id/invoice_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/invoice"/>
+
+            <RadioButton
+                android:id="@+id/so_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/sales_order"/>
+
+            </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/noofcopieslblLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/noofcopieslbl"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/no_of_copies"
+                    android:textColorHint="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/stdownBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/numpicker_down_normal"/>
+
+                    <TextView
+                        android:id="@+id/stnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/numpicker_input_selected"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#000000"/>
+
+                    <Button
+                        android:id="@+id/stupBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/numpicker_up_normal"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/companyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/cmpyname_lbl"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="@string/company_name"
+                    android:textColorHint="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cmpyanme"
+                        android:layout_width="0dip"
+                        android:layout_height="35dip"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/labelbg"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/locationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/locationname_lbl"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="@string/location_name"
+                    android:textColorHint="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/locationname"
+                        android:layout_width="0dip"
+                        android:layout_height="35dip"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/labelbg"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="13sp"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:id="@+id/setting_toLoc"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/customer_spinner"
+                        android:drawSelectorOnTop="true"
+                        android:padding="5dip"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:visibility="visible"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/useridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/userid_lbl"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="@string/login_user"
+                    android:textColorHint="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/userid"
+                        android:layout_width="0dip"
+                        android:layout_height="35dip"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/labelbg"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/enablesuserlayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/enableinvoiceuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="Show Invoice by User"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/areaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/arealbl"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="@string/area"
+                    android:textColorHint="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/areafield"
+                        android:layout_width="0dip"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight=".8"
+                        android:background="@drawable/labelbg"
+                        android:gravity="center"
+                        android:hint="@string/select_area"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="13sp">
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/area_search_bt"
+                        style="@style/button_search_style"
+                        android:layout_width="0dip"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight=".2"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_search"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vanidLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/vanid_lbl"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="@string/van_driver"
+                    android:textColorHint="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vanid"
+                        android:layout_width="0dip"
+                        android:layout_height="35dip"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/labelbg"
+                        android:gravity="center"
+                        android:hint="@string/select_van_driver"
+                        android:text=""
+                        android:textSize="13sp"/>
+
+                    <Button
+                        android:id="@+id/van_bt"
+                        style="@style/button_search_style"
+                        android:layout_width="0dip"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight=".2"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_search"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/languageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/language_lbl"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="@string/language"
+                    android:textColorHint="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/languageSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/customer_spinner"
+                        android:drawSelectorOnTop="true"
+                        android:padding="5dip"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:visibility="visible"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/offlineDataLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/offline_lbl"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="@string/offline"
+                    android:textColorHint="@color/textview_text_color"
+                    android:textSize="16sp"
+                    android:typeface="sans"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/offlineDataBtn"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="35dip"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/offline_data"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/st_butLt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/st_validate"
+                    style="@style/button_style"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/validate"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:id="@+id/st_addurl"
+                    style="@style/button_style"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="Add url"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

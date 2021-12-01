@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dip" >
+
+        <!-- Added new feature -->
+
+        <RelativeLayout
+            android:id="@+id/customKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" >
+
+            <include layout="@layout/custom_keyboard" />
+        </RelativeLayout>
+        <!-- End -->
+
+        <ImageButton
+            android:id="@+id/left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/left_separator"
+            android:contentDescription="@string/title_bar_left_button"
+            android:src="@mipmap/ic_drawer"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/right_separator"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@mipmap/cart_ic"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/right_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/right_separator"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@mipmap/save_ic"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/right_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/right_separator"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@mipmap/search_ic"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/right_left_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/right_separator"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@mipmap/filter_ic"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/right_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/right_separator"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@mipmap/ic_clear_all"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/right_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/right_separator"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@mipmap/ic_close"
+            android:visibility="gone" />
+        
+         <ImageButton
+            android:id="@+id/right_button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/right_separator"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@mipmap/convert_online"
+            android:visibility="gone" />
+        
+        <ImageButton
+            android:id="@+id/right_right_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="72dp"
+            android:background="@drawable/right_separator"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@mipmap/grid_2"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/left_separator"
+            android:contentDescription="@string/title_bar_left_button"
+            android:src="@mipmap/ic_back"
+            android:visibility="gone" />
+
+        <!--<EditText
+            android:id="@+id/search_edt"
+            style="@style/edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_search"
+            android:ems="10"
+            android:imeOptions="actionGo"
+            android:hint="Product Search"
+            android:textColor="@android:color/black"
+            android:visibility="gone" >
+
+            <requestFocus />
+        </EditText>-->
+
+        <EditText
+            android:id="@+id/search_edt"
+            style="@style/edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_search"
+            android:ems="10"
+            android:hint="@string/product_search"
+            android:paddingLeft="5dip"
+            android:imeActionId="@+id/search"
+            android:imeActionLabel="@string/go"
+            android:imeOptions="actionGo"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:visibility="gone" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/cart_txt"
+            android:layout_width="18dip"
+            android:layout_height="18dip"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/round"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/middle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="108dp"
+            android:background="@drawable/right_separator"
+            android:contentDescription="@string/title_bar_right_button"
+            android:src="@mipmap/search_ic"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

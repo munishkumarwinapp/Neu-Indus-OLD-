@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\Munish kumar B\\.android\\build-cache\\44b41bdcde2dcd97c8fa73a327dffa4685417d1e\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_holo_light.xml",
+        "source": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_disable_only_holo_dark.xml",
+        "source": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_holo_dark.xml",
+        "source": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_disable_only_holo_light.xml",
+        "source": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_disable_only_holo_light.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_holo_light.xml",
+        "source": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Sathish Kumar T.M\\.android\\build-cache\\bacd88ef27ea45afbcc5de78775c863d7821ac5f\\output\\res\\color\\common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_disable_only_holo_dark.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\Sathish Kumar T.M\\.android\\build-cache\\8805c292603f0063d198e6fa96f1badeef99b278\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_disable_only_holo_light.xml",
+        "source": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_disable_only_holo_light.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\e1f2073ee6e31967791adbb3108095612b160077\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\e1f2073ee6e31967791adbb3108095612b160077\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\b3c19c2028982c5175961ab860f3b6e8bb84fba0\\output\\res\\color\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\b3c19c2028982c5175961ab860f3b6e8bb84fba0\\output\\res\\color\\common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_disable_only_holo_light.xml",
+        "source": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Munish kumar B\\.android\\build-cache\\89458ccf94a852e98296abed530d925990b924b6\\output\\res\\color\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_holo_dark.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_holo_light.xml",
+        "source": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\e1f2073ee6e31967791adbb3108095612b160077\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\b3c19c2028982c5175961ab860f3b6e8bb84fba0\\output\\res\\color\\common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Sathish Kumar T.M\\.android\\build-cache\\bacd88ef27ea45afbcc5de78775c863d7821ac5f\\output\\res\\color\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_holo_dark.xml",
+        "source": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_holo_light.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\b3c19c2028982c5175961ab860f3b6e8bb84fba0\\output\\res\\color\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\Sathish Kumar T.M\\.android\\build-cache\\ce1aee67999f4cfee9457a0a01ca2a1a91f13e50\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Munish kumar B\\.android\\build-cache\\89458ccf94a852e98296abed530d925990b924b6\\output\\res\\color\\common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_holo_dark.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_holo_dark.xml",
+        "source": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\Sathish Kumar T.M\\.android\\build-cache\\ce1aee67999f4cfee9457a0a01ca2a1a91f13e50\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Sathish Kumar T.M\\.android\\build-cache\\6964d7fd537e6c341f7fc5d1bc32299fef1cc6b1\\output\\res\\color\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\e1f2073ee6e31967791adbb3108095612b160077\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\Munish kumar B\\.android\\build-cache\\44b41bdcde2dcd97c8fa73a327dffa4685417d1e\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_disable_only_holo_dark.xml",
+        "source": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_holo_light.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_disable_only_holo_dark.xml",
+        "source": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\abs__primary_text_disable_only_holo_dark.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\color\\abs__primary_text_disable_only_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\Sathish Kumar T.M\\.android\\build-cache\\8805c292603f0063d198e6fa96f1badeef99b278\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Sathish Kumar T.M\\.android\\build-cache\\6964d7fd537e6c341f7fc5d1bc32299fef1cc6b1\\output\\res\\color\\common_signin_btn_text_dark.xml"
+    }
+]

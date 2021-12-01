@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.davemorrissey.labs:subsampling-scale-image-view:3.4.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/20fb8deb541e643ef1b59e2e8df9c0acbe41de60/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/20fb8deb541e643ef1b59e2e8df9c0acbe41de60/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/20fb8deb541e643ef1b59e2e8df9c0acbe41de60/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/f79b366dc436c5afe8138f9fdcc1cc43fae24609/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/f79b366dc436c5afe8138f9fdcc1cc43fae24609/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/f79b366dc436c5afe8138f9fdcc1cc43fae24609/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/ea3d0a150a6826de2d80701697ef7bab4171057f/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/ea3d0a150a6826de2d80701697ef7bab4171057f/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/ea3d0a150a6826de2d80701697ef7bab4171057f/output/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

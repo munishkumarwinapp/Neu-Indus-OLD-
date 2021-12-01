@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.winapp.sot.ManualAddStockTake">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/summary_header" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/cust_add_termcode_ll"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/stocktake"
+                android:layout_width="142dp"
+                android:layout_height="38dip"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:gravity="left|center"
+                android:hint="Stock Take No :"
+                android:textColorHint="@color/textview_text_color"
+                android:textSize="16sp"
+                android:typeface="sans" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/stock_take_ed"
+                android:layout_width="match_parent"
+                android:layout_height="38dip"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/customer_spinner"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:textColor="@color/title_text_color"
+                android:textSize="14sp"
+                android:typeface="sans" >
+            </Spinner>
+        </LinearLayout>
+        <Button
+            android:id="@+id/so_addProduct"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:text="Add Product to Summary" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

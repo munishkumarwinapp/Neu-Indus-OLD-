@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:id="@+id/listing_screen"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.62"
+            android:background="@drawable/rounded_tab_left"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Listing"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/customer_view"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/customer_screen"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.62"
+            android:background="@drawable/rounded_tab_center"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Customer"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/addProduct_screen"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.62"
+            android:background="@drawable/tab_select"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Product"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sum_screen"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.62"
+            android:background="@drawable/rounded_tab_right"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Summary"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#F4FBFF"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/customer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:background="@drawable/header_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/cust_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="CustomerName"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\drawable-v11\\abs__progress_medium_holo.xml",
+        "source": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\drawable-v11\\abs__progress_medium_holo.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\drawable-v11\\abs__progress_medium_holo.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\drawable-v11\\abs__progress_medium_holo.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\drawable-v11\\abs__progress_medium_holo.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\drawable-v11\\abs__progress_medium_holo.xml"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\drawable-v11\\abs__progress_medium_holo.xml",
+        "source": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\drawable-v11\\abs__progress_medium_holo.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\debug\\drawable-v11\\abs__progress_medium_holo.xml",
+        "source": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\actionbarsherlock\\build\\intermediates\\bundles\\default\\res\\drawable-v11\\abs__progress_medium_holo.xml"
+    }
+]

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="4dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dip" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dip"
+                android:layout_height="30dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Credit"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:src="@mipmap/close" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textview_text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="Credit Note"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/ed_credit"
+                    style="@style/edittext_style"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center" >
+
+                <Button
+                    android:id="@+id/bt_addcredit"
+                    style="@style/button_style"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/border"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2.5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_weight=".5"
+            android:text="Barcode"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/getStrtsEnds"
+            style="@style/barcode_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_margin="5dip"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:hint="Barcode" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weightLabel2layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btn_strts"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="0.6"
+            android:text="Starts On"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/startson"
+            style="@style/edittext_style"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="0.4"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_ends"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="0.6"
+            android:text="Ends On"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/endson"
+            style="@style/edittext_style"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="0.05"
+            android:gravity="center"
+            android:text="Weight Decimal points"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weightdecimallayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/weight_decimal_minus"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.4"
+            android:background="@mipmap/numpicker_down_normal" />
+
+        <EditText
+            android:id="@+id/weight_decimal"
+            style="@style/edittext_style"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.4"
+            android:editable="false"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="14dp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/weight_decimal_plus"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.4"
+            android:background="@mipmap/numpicker_up_normal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/filter_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="35dip"
+            android:background="@color/light_blue" />
+
+        <Button
+            android:id="@+id/cancelbutton"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:text="Cancel" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="35dip"
+            android:background="@color/light_blue" />
+
+        <Button
+            android:id="@+id/okbutton"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:text="Ok" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="35dip"
+            android:background="@color/light_blue" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/filter_title" />
+
+</LinearLayout>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/receipt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@drawable/home_bg"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/left_separator"
+                android:contentDescription="@string/title_bar_left_button"
+                android:src="@mipmap/back_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/pageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Receipt"
+                android:textColor="@color/title_text_color"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/right_separator"
+                android:src="@mipmap/ic_find" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            android:layout_weight=".1"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/printer1"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:background="@drawable/right_separator"
+                android:src="@mipmap/ic_menu_print"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+     <LinearLayout
+        android:id="@+id/inv_offlineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:background="@drawable/offline_pattern_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+        </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/codelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/receiptCustCode"
+                style="@style/edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:drawableRight="@drawable/ic_search"
+                android:focusable="true"
+                android:layout_weight="1"
+                android:hint="@string/customer_code"
+                android:imeOptions="actionDone"
+                android:inputType="text" >
+            </EditText>
+
+            <requestFocus />
+            
+             <EditText
+                    android:id="@+id/sl_namefield"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/labelbg"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/description"
+                    android:imeOptions="actionNext"
+                    android:inputType="none"
+                    android:paddingLeft="8dp"
+                    android:textColor="#3a3a3c"
+                    android:textSize="16sp"
+                    android:typeface="sans" 
+                    android:visibility="visible">
+                </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/receipt_userCode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/labelbg"
+                android:drawableRight="@drawable/ic_search"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:hint="@string/user"
+                android:imeOptions="actionDone"
+                android:inputType="text" >
+            </EditText>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Datelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/starteditTextDate"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:editable="false"
+                android:ems="10"
+                android:hint="@string/start_date" />
+
+            <EditText
+                android:id="@+id/endeditTextDate"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:editable="false"
+                android:ems="10"
+                android:hint="@string/end_date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/receipt_btsearch"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:text="@string/search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/recepitlistheaderlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/header_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <EditText
+                android:id="@+id/receiptcheck"
+                android:layout_width="21dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.1"
+                android:background="@null"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint=""
+                android:inputType="none"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/receiptSno"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/receipts_no"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/receiptDate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/receiptCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/customer_name"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/receiptAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/amount"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <!--
+      <TextView
+                android:id="@+id/salesOStatus"
+                android:layout_width="29dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="5.41"
+                android:gravity="center"
+                android:text="Status"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/receipt_listView1"
+            style="@style/listview_style"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/totaloutstanding_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/header_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <ImageButton
+                android:id="@+id/re_print"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/left_separator"
+                android:contentDescription="@string/title_bar_left_button"
+                android:src="@mipmap/ic_menu_print"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txt_totaloutstanding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="right"
+                android:text="@string/total_received"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:text=" : "
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/totaloutstanding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SFA Source</string>
+    <!--    <string name="app_name">Taisun SFA</string>-->
+    <string name="action_settings">Settings</string>
+    <string name="returns_option">Returns</string>
+    <string name="returns_sign">Signature</string>
+    <string name="title_activity_validate_url">ValidateURL</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_loading_page">LoadingPage</string>
+    <string name="external_dir">GetSignature</string>
+    <string name="action_search">Search</string>
+    <string name="action_new">NewCustomer</string>
+    <string name="action_print">Printer</string>
+    <string name="searching_printers">Searching for printers&#8230;</string>
+    <string name="no_bluetooth_support">Your device doesn\'t support bluetooth</string>
+    <string name="bluetooth_disabled">Bluetooth has not enabled</string>
+    <string name="title_please_wait">Please Wait</string>
+    <string name="no_printers_found">No Printers Found</string>
+    <string name="unknown_printer">Unknown printer. Only Zebra MZ 320 printer is supported</string>
+    <string name="printed_successfully">Printed successfully</string>
+    <string name="unable_to_find_printer">Unable to find printer. Make sure the printer is switched ON</string>
+    <string name="connecting_to_printer">Connecting to printer&#8230;</string>
+    <string name="printing_in_progress">Printing in progress&#8230;</string>
+    <string name="is_not_valid_mac_address"> is not a valid MAC Address</string>
+    <string name="search_printer">Search Printer</string>
+    <string name="creating_file_for_printing">Creating file for printing&#8230;</string>
+    <string name="error_creating_file_for_printing">Error in creating file for printing</string>
+    <string name="generating_invoice">Generating Invoice for printing&#8230;</string>
+    <string name="generating_so">Generating SO for printing&#8230;</string>
+    <string name="generating_settlement">Generating Settlement for printing&#8230;</string>
+    <string name="generating_sr">Generating SR for printing&#8230;</string>
+    <string name="generating_receipt">Generating Receipt for printing&#8230;</string>
+    <string name="generating_do">Generating DO for printing&#8230;</string>
+    <string name="consignment_printpreview">Print Preview&#8230;</string>
+    <string name="generating_ps">Generating ProductStock for printing&#8230;</string>
+    <string name="error_configure_printer">Please configure your printer</string>
+    <string name="title_bar_left_button">Title bar left button</string>
+    <string name="title_bar_right_button">Title bar right button</string>
+    <string name="add_button">Add Button</string>
+    <string name="print">Print</string>
+    <string name="ok">OK</string>
+    <string name="generating_transfer">Generating Transfer for printing&#8230;</string>
+    <string name="generating_consignment">Generating Consignment for printing&#8230;</string>
+    <string name="generating_consignment_return">Generating Consignment Return for printing&#8230;</string>
+    <string name="downloading1">Downloading from server.</string>
+    <string name="downloading2">Downloading from server..</string>
+    <string name="downloading3">Downloading from server...</string>
+    <string name="downloading_general_settings">Downloading GeneralSettings&#8230;</string>
+    <string name="downloading_usermaster">Downloading UserMaster&#8230;</string>
+    <string name="downloading_get_company">Downloading GetCompany&#8230;</string>
+    <string name="downloading_get_customer">Downloading GetCustomer&#8230;</string>
+    <string name="downloading_get_currency">Downloading GetCurrency&#8230;</string>
+    <string name="downloading_get_serverdate">Downloading ServerDate&#8230;</string>
+    <string name="downloading_get_nextno">Downloading NextRunningNumber&#8230;</string>
+    <string name="downloading_get_location">Downloading GetLocation&#8230;</string>
+    <string name="downloading_get_userpermission">Downloading User Permission&#8230;</string>
+    <string name="downloading_get_category">Downloading GetCategory&#8230;</string>
+    <string name="downloading_get_subcategory">Downloading GetSubCategory&#8230;</string>
+    <string name="downloading_get_companylogo">Downloading GetCompanyLogo&#8230;</string>
+    <string name="downloading_get_product">Downloading GetProduct&#8230;</string>
+    <string name="downloading_get_productbarcode">Downloading GetProductBarcode&#8230;</string>
+    <string name="downloading_get_invoiceheader">Downloading GetInvoiceHeader&#8230;</string>
+    <string name="downloading_get_invoicedetail">Downloading GetInvoiceDetail&#8230;</string>
+    <string name="downloading_get_invoiceheaderbyinvoiceno">Downloading GetInvoiceHeaderByInvoiceNo&#8230;</string>
+    <string name="downloading_get_invoicecartondetail">Downloading GetInvoiceCartonDetail&#8230;</string>
+    <string name="data_downloaded_successfully">Data Downloaded Successfully&#8230;</string>
+    <string name="completed">Completed&#8230;</string>
+    <string name="data_uploaded_successfully">Data uploaded Successfully&#8230;</string>
+    <string name="customer_uploaded_successfully">Customer uploaded Successfully&#8230;</string>
+    <string name="invoice_uploaded_successfully">Invoice uploaded Successfully&#8230;</string>
+    <string name="receipt_uploaded_successfully">Receipt uploaded Successfully&#8230;</string>
+    <string name="so_uploaded_successfully">Sales Order uploaded Successfully&#8230;</string>
+    <string name="data_upload_failed">Data upload Failed&#8230;</string>
+    <string name="invoice_upload_failed">Invoice upload Failed&#8230;</string>
+    <string name="receipt_upload_failed">Receipt upload Failed&#8230;</string>
+    <string name="customer_upload_failed">Customer upload Failed&#8230;</string>
+    <string name="so_upload_failed">Sales Order upload Failed&#8230;</string>
+    <string name="error_downloading_data_no_network_connection">Error downloading data - No Network connection</string>
+    <string name="error_downloading_data">Error downloading data</string>
+    <string name="invoice_printpreview">Invoice Print Preview</string>
+    <string name="receipt_printpreview">Receipt Print Preview</string>
+    <string name="downloading_get_bank">Downloading GetBank&#8230;</string>
+    <string name="downloading_get_paymode">Downloading GetPayMode&#8230;</string>
+    <string name="downloading_get_invoiceheaderonlyhavebalance">Downloading InvoiceHeaderOnlyHaveBalance&#8230;</string>
+    <string name="downloading_get_receiptheader">Downloading GetReceiptHeader&#8230;</string>
+    <string name="downloading_get_receiptdetail">Downloading GetReceiptDetail&#8230;</string>
+    <string name="downloading_get_productstock">Downloading ProductStock&#8230;</string>
+    <string name="signimage_uploaded_successfully">Signature Image uploaded Successfully&#8230;</string>
+    <string name="signimage_upload_failed">Signature Image upload Failed&#8230;</string>
+
+    <!-- offline String -->
+    <string name="download">Download</string>
+    <string name="do_you_want_to_download_data">Do you want to download data</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="downloading_get_area">Downloading GetArea&#8230;</string>
+    <string name="downloading_get_terms">Downloading GetTerms&#8230;</string>
+    <string name="downloading_get_customergroup">Downloading GetCustomerGroup&#8230;</string>
+    <string name="upload_data">Uploading&#8230;</string>
+    <string name="sync_data">Synchronizing data&#8230;</string>
+    <string name="upload_customer">Uploading Customer&#8230;</string>
+    <string name="upload_invoice">Uploading Invoice&#8230;</string>
+    <string name="upload_receipt">Uploading Receipt&#8230;</string>
+    <string name="switch_to_online">Switch to online</string>
+    <string name="switch_to_offine">Switch to offline</string>
+    <string name="upload">Upload/Sync</string>
+    <string name="online_status">You have internet connection. Do you want to continue in online</string>
+    <string name="offline_alert">You don\'t have internet connection .Please Enable Network Connectivity!!!</string>
+    <string name="offline_status">You don\'t have internet connection. Do you want to continue in offline</string>
+    <string name="switch_to_online_status">Do you want to upload the data to server and switch to online?</string>
+    <string name="switch_to_offline_status">Do you want to download data from server and switch to offline?</string>
+    <string name="upload_status">Do you want to upload and synchronize the data</string>
+    <string name="no_data_upload">No Data to Upload&#8230;</string>
+    <!-- End -->
+
+    <string name="salesorder_printpreview">SalesOrder Print Preview</string>
+    <string name="deliveryorder_printpreview">DeliveryOrder Print Preview</string>
+    <string name="salesreturn_printpreview">Sales Return Print Preview</string>
+    <string name="stockrequest_printpreview">Stock Request Print Preview</string>
+    <string name="Transfer_printpreview">Transfer Print Preview</string>
+    <string name="gra_printpreview">GRA Print Preview</string>
+    <string name="error_showing_image_no_network_connection">Error showing image - No Network connection</string>
+    <string name="error_showing_image">No more image</string>
+    <string name="url_title_image">URL_Title_Image</string>
+    <string name="settings">Settings</string>
+    <string name="version">Version : 1</string>
+    <string name="domain_url">Domain URL</string>
+    <string name="validate">Validate</string>
+    <string name="splash_title_image">Splash_Title_Image</string>
+    <string name="connecting">Connecting&#8230;</string>
+    <string name="copyright">© Winapp Solutions Pte Ltd 2014</string>
+    <string name="website">www.winapp.com.sg</string>
+    <string name="login_title_image">Login_Title_Image</string>
+    <string name="login">Login</string>
+    <string name="username">User ID</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="home_title_image">Home_Title_Image</string>
+    <string name="home_title_name">Frozen Management</string>
+    <string name="good_receive">Good Receive</string>
+    <string name="sales_order">Sales Order</string>
+    <string name="delivery_order">Delivery Order</string>
+    <string name="consignment">Consignment</string>
+    <string name="consignment_return">Consignment Return</string>
+    <string name="consignment_stock">Consignment Stock</string>
+    <string name="consignment_stock_take">Consignment Stock Take</string>
+    <string name="invoice">Invoice</string>
+    <string name="invoice_summary">Invoice Summary</string>
+    <string name="delivery_summary">Delivery Summary</string>
+    <string name="sales_return">Sales Return</string>
+    <string name="receipts">Receipts</string>
+    <string name="customer_list">Customer List</string>
+    <string name="product_stock">Product Stock</string>
+    <string name="stock_request">Stock Request</string>
+    <string name="transfer">Transfer</string>
+    <string name="catalog">Catalog</string>
+    <string name="title_bar_search_icon">Title Bar Search Icon</string>
+    <string name="title_name_gra">GRA</string>
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="new_button">New</string>
+    <string name="search">Search</string>
+    <string name="sno">SNo</string>
+    <string name="status">Status</string>
+    <string name="supplier_code">Supplier Code</string>
+    <string name="supplier">Supplier</string>
+    <string name="add_product">Add Product</string>
+    <string name="code">Code</string>
+    <string name="currency_code">Currency Code</string>
+    <string name="currency_name">Currency Name</string>
+    <string name="currency_rate">Currency Rate</string>
+    <string name="description">Description</string>
+    <string name="do_date">Do Date</string>
+    <string name="do_number">DO Number</string>
+    <string name="gra_date">GRA Date</string>
+    <string name="invoice_date">Invoice Date</string>
+    <string name="invoice_number">Invoice Number</string>
+    <string name="remarks">Remarks</string>
+    <string name="select_supplier">Select Supplier</string>
+    <string name="summary">Summary</string>
+    <string name="add">Add</string>
+    <string name="product_code">Product Code</string>
+    <string name="name">Name</string>
+    <string name="price">Price</string>
+    <string name="carton_per_qty">Carton Per Qty</string>
+    <string name="carton_qty">Carton Qty</string>
+    <string name="loose_qty">Loose Qty</string>
+    <string name="foc">Foc</string>
+    <string name="net_total">Net Total</string>
+    <string name="uom">UOM</string>
+    <string name="tax">Tax</string>
+    <string name="two_zeros">0.00</string>
+    <string name="four_zeros">0.0000</string>
+    <string name="discount">Discount</string>
+    <string name="qty">Qty</string>
+    <string name="total">Total</string>
+
+    <string-array name="titles">
+        <item>SalesOrder</item>
+        <item>Product</item>
+        <item>Customer</item>
+        <item>Invoice</item>
+        <item>Setting</item>
+    </string-array>
+    <string-array name="weight_status">
+        <item>Default</item>
+        <item>Exchange</item>
+        <item>Foc</item>
+    </string-array>
+    <string-array name="so_status">
+        <item>Open</item>
+        <item>InProgress Invoice</item>
+        <item>InProgress DO</item>
+        <item>Closed</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="sr_status">
+        <item>Open</item>
+        <item>InProgress</item>
+        <item>Closed</item>
+    </string-array>
+    <string-array name="status">
+        <item>Open</item>
+        <item>view</item>
+        <item>partial</item>
+        <item>Closed</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="invoice_status">
+        <item>Not Paid</item>
+        <item>Paid</item>
+        <item>All</item>
+        <item>POD Pending</item>
+    </string-array>
+    <string-array name="consignment_status">
+        <item>Consignment</item>
+        <item>Consignment Return</item>
+        <item>Consignment Invoice</item>
+    </string-array>
+    <string-array name="transfer_status">
+        <!--<item>All</item>-->
+        <!--<item>Open</item>-->
+        <item>Pending Transfer</item>
+        <item>Closed</item>
+    </string-array>
+
+    <string name="save">Save</string>
+    <string name="cncl">Cancel</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="location">Location</string>
+    <string name="tot_item">Tot Item</string>
+    <string name="user">User</string>
+    <string name="stock_take_date">Stock Take Date</string>
+    <string name="stock_take">Stock Take</string>
+    <string name="product_name"> ProductName</string>
+    <string name="pcs_per_carton">PCS Per Carton</string>
+    <string name="current_qty">Current Qty</string>
+    <string name="carton">Carton</string>
+    <string name="loose">Loose</string>
+    <string name="total_qty">Total Qty</string>
+    <string name="update">Update</string>
+    <string name="stock_take_no">Stock TakeNo</string>
+    <string name="st_no">STNo</string>
+    <string name="clear_filters">Clear Filters</string>
+    <string name="apply">Apply</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub-category</string>
+    <string name="filter">Filter</string>
+    <string name="units">Units</string>
+    <string name="image">ImageView</string>
+    <string name="select_carton_qty">Select Carton </string>
+    <string name="specification">Specification</string>
+    <string name="carton_price">Carton Price</string>
+    <string name="pcspercarton">PcsPerCarton</string>
+    <string name="invalid_product_code">Invalid Product Code</string>
+    <string name="no_sub_image_for_particular_product">No SubImage for Particular Product</string>
+    <string name="no_network">No Network Connection</string>
+    <string name="added">Added</string>
+    <string name="catalog_details">Catalog Detail</string>
+    <string name="title_activity_expense_header">ExpenseHeader</string>
+    <string name="title_activity_expense_add">Add Expense</string>
+
+    <string-array name="carton_status">
+        <item>0</item>
+        <item>12</item>
+        <item>24</item>
+        <item>36</item>
+        <item>48</item>
+        <item>60</item>
+    </string-array>
+
+    <string name="show_only_balance">Show Only Balance</string>
+    <string name="customer_code">Customer Code</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="no_record_found">No Record Found !</string>
+
+    <string-array name="offline_data">
+        <item>SalesOrder</item>
+        <item>Invoice</item>
+        <item>Receipt</item>
+        <item>Customer</item>
+        <item>Products</item>
+    </string-array>
+    <string-array name="offline_status">
+        <item>Pending To Upload</item>
+        <item>All Offline Data</item>
+    </string-array>
+    <string-array name="crm_priority">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="crm_status">
+        <item>Open</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Hold</item>
+    </string-array>
+    <string-array name="sort_by">
+        <item>Sort By</item>
+        <item>Products</item>
+        <item>Category</item>
+        <item>SubCategory</item>
+    </string-array>
+
+    <string-array name="sub_cate">
+        <item>SubCategory</item>
+        <item>Products</item>
+        <item>Category</item>
+        <item>SubCategory</item>
+    </string-array>
+
+    <string-array name="categroy">
+        <item>Category</item>
+        <item>Sort By</item>
+        <item>Products</item>
+        <item>SubCategory</item>
+    </string-array>
+
+    <string-array name="load_type">
+        <item>By Supplier Product</item>
+        <item>By Supplier Purchase</item>
+        <item>By Purchase Invoice No</item>
+        <item>Sales</item>
+        <item>All the products</item>
+    </string-array>
+    <string-array name="cost_type">
+        <item>Unit Cost</item>
+        <item>Average Cost</item>
+        <item>Purchase Average Cost</item>
+    </string-array>
+
+    <string name="title_activity_customer_address">CustomerAddress</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="assigned">Assigned</string>
+    <string name="activity">Activity</string>
+    <string name="start_job">Start Job</string>
+    <string name="delivery_code">Delivery Code</string>
+    <string name="outletname">OutLetName</string>
+    <string name="take_pic_before_job">BEFORE START JOB</string>
+    <string name="take_pic_after_job">AFTER COMPLETE JOB</string>
+    <string name="no_record">No Record Found !</string>
+    <string name="additional_image">ADDITIONAL IMAGE</string>
+    <string name="signature">SIGNATURE</string>
+    <string name="remarks1">Remarks 1</string>
+    <string name="remarks2">Remarks 2</string>
+    <string name="jobstarttime">JobStartTime</string>
+    <string name="jobEndTime">JobEndTime</string>
+
+    <string-array name="merchandise_status">
+        <item>Open</item>
+        <item>In Progress</item>
+        <item>Closed</item>
+    </string-array>
+
+    <string-array name="packed_status">
+        <item>Open</item>
+        <item>In Progress</item>
+        <item>Packed</item>
+        <item>All</item>
+    </string-array>
+
+    <string name="device_not_found">No device found!</string>
+    <string name="device_found" formatted="false">%s device%s found!</string>
+
+    <string name="title_activity_print">PrintActivity</string>
+    <string name="title_activity_bluetooth">BluetoothActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="scanning">scanning for devices</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="title_connecting">connecting</string>
+    <string name="title_not_connected">not connected</string>
+    <string name="title_connected_to">connected to</string>
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="fourinch_bluetooth">4 Inch Bluetooth</string>
+    <string name="threeinch_bluetooth">3 Inch Bluetooth Generic</string>
+    <string-array name="charsize">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string name="title_activity_wifi">WifiActivity</string>
+    <string name="title_select_device">Select a device to connect</string>
+    <string name="title_scanning">Scanning for devices&#8230;</string>
+    <string name="title_scan">Scan for devices</string>
+    <string name="title_bluetooth_disabled">Bluetooth is disabled</string>
+    <string name="title_connect">Connect</string>
+    <string name="title_address">Address</string>
+
+    <!--Map Key-->
+    <!--<string name="google_map_key">AIzaSyCuh-pTsf-04BNpf32rtxIUiZD_fAl8VQI</string>-->
+    <string name="google_map_key">AIzaSyBO8j2jISVChj87YAs3ZflCnhUJBoD9x_g</string>
+
+    <string name="current">Current</string>
+    <string name="route">Route</string>
+    <!--
+    <string name="search">Search</string>
+-->
+
+    <string name="sfa_version">V2.0</string>
+
+    <string name="attendance">Attendance</string>
+    <string name="history">History</string>
+
+    <!-- Menu -->
+    <string name="merchandise_schedule">Merchandise Schedule</string>
+    <string name="merchandise">Merchandise</string>
+    <string name="packing">Packing</string>
+    <string name="delivery_verification">Delivery Verification</string>
+    <string name="stock_adjustment">Stock Adjustment</string>
+    <string name="expense">Expense</string>
+    <string name="overdue">Overdue</string>
+    <string name="task">Task</string>
+    <string name="maps">Maps</string>
+
+    <!--- Settings -->
+    <string name="printer_type"> Printer Type</string>
+    <string name="zebra_iMZ320">Zebra iMZ320</string>
+    <string name="zebra_iMZ320_4_inch">Zebra iMZ320 4 Inch</string>
+    <string name="printer_address"> Printer Address</string>
+    <string name="a4_wifi_direct">A4 Wifi Direct</string>
+    <string name="enable_print_by_default">Enable print by default</string>
+    <string name="deliveryorderoninvoice_print_by_default"> DeliveryOrderOnInvoice print by default</string>
+    <string name="display_all_location_data"> Display all location data</string>
+    <string name="pod_pending"> POD Pending</string>
+    <string name="on_invoice_show_product_on_list"> On Invoice Show Product On List</string>
+    <string name="from_catalog_create"> From catalog create</string>
+    <string name="no_of_copies"> No Of Copies</string>
+    <string name="company_name"> Company Name</string>
+    <string name="location_name"> Location Name</string>
+    <string name="login_user"> Login User</string>
+    <string name="area"> Area</string>
+    <string name="van_driver"> Van/Driver</string>
+    <string name="offline"> Offline</string>
+    <string name="offline_data">Offline Data</string>
+    <string name="select_area">Select Area</string>
+    <string name="select_van_driver">Select van/driver</string>
+    <string name="language">Language</string>
+
+    <string-array name="supported_languages">
+        <item>English</item>
+        <item>中文（简体）</item>
+    </string-array>
+    <string-array name="select_language">
+        <item>English</item>
+        <item>Chinese Simplified (中文 简)</item>
+    </string-array>
+
+    <string name="exit">Exit</string>
+    <string name="Do_you_want_to_exit">Do you want to Exit</string>
+    <string name="no">No</string>
+
+    <string name="product_search">Product Search</string>
+    <string name="go">Go</string>
+
+    <string name="not_paid">Not Paid</string>
+    <string name="paid">Paid</string>
+    <string name="all">All</string>
+    <string name="Normal">Consignment</string>
+    <string name="Return">Return</string>
+    <string name="Invoice">Invoice</string>
+    <string name="invoice_no">Invoice No</string>
+    <string name="balance">Balance</string>
+    <string name="totaloutstanding">Total OutStanding</string>
+    <string name="returns">Returns</string>
+    <string name="cash_collection">Cash Collection</string>
+    <string name="edit_invoice">Edit Invoice</string>
+    <string name="edit_stock">Edit Stock</string>
+    <string name="delete_invoice">Delete Invoice</string>
+    <string name="print_preview">Print Preview</string>
+    <string name="print_delivery_order">Print Delivery Order</string>
+    <string name="send_email">Send Email</string>
+    <string name="credit">Credit</string>
+    <string name="net_amount">NetAmount</string>
+    <string name="split">Split</string>
+    <string name="total_paid">Total Paid</string>
+    <string name="total_credit">Total Credit</string>
+
+    <string name="sr_no">SR No</string>
+    <string name="sr_date">SR Date</string>
+    <string name="extra_amount">Extra Amount</string>
+    <string name="total_received">Total Received</string>
+
+    <string name="enter_from_date">Enter from date</string>
+    <string name="enter_to_date">Enter to date</string>
+
+
+    <string name="warning">Warning</string>
+    <string name="update_warning">Your phone is already updated with newer version. Please contact your system admin to update the server.</string>
+    <string name="do_you_want_to_update">New version is available. Do you want to update?</string>
+    <string name="not_update_warning">Your phone is not updated with newer version. Please contact your system admin to update it.</string>
+
+    <string name="total_amount">Total Amount</string>
+    <string name="receipts_no">Receipts No</string>
+    <string name="update_pcs">Unable to update the pcspercarton</string>
+    <string name="english">English</string>
+    <string name="chinese">中文（简体）</string>
+    <string name="change_language">Change Language</string>
+    <string name="lanugage">Language</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="over_due">Overdue</string>
+
+    <string name="details">Details</string>
+    <string name="analysis">Analysis</string>
+    <string name="purchase">Purchase</string>
+    <string name="sales">Sales</string>
+    <string name="cost">Cost</string>
+    <string name="profit">Profit</string>
+    <string name="unitcost">Unit Cost</string>
+    <string name="averagecost">Average Cost</string>
+    <string name="fprice">Fprice</string>
+    <string name="wholesaleprice">WholeSale Price</string>
+    <string name="retail_price">Retail Price</string>
+    <string name="margin">Margin</string>
+    <string name="data">Data</string>
+    <string name="chart">Chart</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="group_by">Group By</string>
+    <string name="purchase_vs_sales">Purchase vs Sales</string>
+    <!-- Permission -->
+    <string name="permission_request_title">Requesting Location Permission </string>
+    <string name="app_permission_notice">GPS permission allows us to access location data. Please allow in App Settings for additional functionality.</string>
+    <string name="permission_refused">Permission Denied, You cannot access location data.</string>
+    <string name="delivery_ordernew">Delivery Order New</string>
+
+    <string name="scan_barcode">Scan Barcode</string>
+    <string name="any_orientation">1D Any Orientation</string>
+    <string name="scan_from_fragment">Scan from fragment</string>
+    <string name="front_camera">Front Camera</string>
+    <string name="custom_activity">Continuous Scan</string>
+    <string name="toolbar_activity">Activity with Toolbar</string>
+    <string name="custom_scanner">Custom Scanner Activity</string>
+    <string name="scanner_with_margin">Scanner with Margin</string>
+    <string name="scanner_with_timeout">Finish Scan in 8 Seconds</string>
+    <string name="turn_on_flashlight">Turn on Flashlight</string>
+    <string name="turn_off_flashlight">Turn off Flashlight</string>
+    <string name="title_activity_tabbed_scanning">Tabbed Scanning</string>
+    <string name="tabs">Tabs</string>
+</resources>

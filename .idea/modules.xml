@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SFA-master.iml" filepath="$PROJECT_DIR$/.idea/modules/SFA-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/actionbarsherlock/SFA-master.actionbarsherlock.iml" filepath="$PROJECT_DIR$/.idea/modules/actionbarsherlock/SFA-master.actionbarsherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ezySalesOrder/SFA-master.ezySalesOrder.iml" filepath="$PROJECT_DIR$/.idea/modules/ezySalesOrder/SFA-master.ezySalesOrder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mPChartLib/SFA-master.mPChartLib.iml" filepath="$PROJECT_DIR$/.idea/modules/mPChartLib/SFA-master.mPChartLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/slidemenulibrary/SFA-master.slidemenulibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/slidemenulibrary/SFA-master.slidemenulibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zxing-android-embedded/SFA-master.zxing-android-embedded.iml" filepath="$PROJECT_DIR$/.idea/modules/zxing-android-embedded/SFA-master.zxing-android-embedded.iml" />
+    </modules>
+  </component>
+</project>

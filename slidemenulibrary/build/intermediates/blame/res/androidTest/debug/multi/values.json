@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "D:\\Projects\\SFA Source\\Source\\slidemenulibrary\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1008,
+                    "endColumn": 42,
+                    "endOffset": 1046
+                },
+                "from": {
+                    "file": "D:\\Projects\\SFA Source\\Source\\slidemenulibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1008,
+                        "endColumn": 42,
+                        "endOffset": 1046
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\slidemenulibrary\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1008,
+                    "endColumn": 42,
+                    "endOffset": 1046
+                },
+                "from": {
+                    "file": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\slidemenulibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1008,
+                        "endColumn": 42,
+                        "endOffset": 1046
+                    }
+                }
+            }
+        ]
+    }
+]

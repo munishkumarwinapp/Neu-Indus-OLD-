@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\zxing_barcode_scanner.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\bundles\\debug\\res\\layout\\zxing_barcode_scanner.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\zxing_capture.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\bundles\\debug\\res\\layout\\zxing_capture.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\zxing_barcode_scanner.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\zxing-android-embedded\\build\\intermediates\\bundles\\debug\\res\\layout\\zxing_barcode_scanner.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\zxing_capture.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\zxing-android-embedded\\build\\intermediates\\bundles\\debug\\res\\layout\\zxing_capture.xml"
+    }
+]

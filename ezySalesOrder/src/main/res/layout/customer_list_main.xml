@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customerList_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:weightSum="8.7" >
+
+    <LinearLayout
+        android:id="@+id/offlineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/offline_pattern_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scaleType="fitXY"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/header_layout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="39dp" -->
+    <!-- android:background="@drawable/home_bg" -->
+    <!-- android:orientation="horizontal" -->
+    <!-- android:weightSum="4" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/back_btn_layout" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="0.5" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageButton -->
+    <!-- android:id="@+id/back" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:background="@drawable/left_separator" -->
+    <!-- android:contentDescription="@string/title_bar_left_button" -->
+    <!-- android:src="@drawable/back_arrow" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/pagetitle_layout" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="3.5" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" -->
+    <!-- android:visibility="visible"  > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/customer_Title" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:gravity="center" -->
+    <!-- android:paddingLeft="4dp" -->
+    <!-- android:text="Customer List" -->
+    <!-- android:textColor="@color/title_text_color" -->
+    <!-- android:textSize="15sp" -->
+    <!-- android:textStyle="bold" -->
+    <!-- android:typeface="sans"/> -->
+
+
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/auto_search_layout" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="3.5" -->
+    <!-- android:gravity="right" -->
+    <!-- android:layout_marginTop="1dp" -->
+    <!-- android:orientation="horizontal" -->
+    <!-- android:visibility="gone" > -->
+
+
+    <!-- <AutoCompleteTextView -->
+    <!-- android:id="@+id/auto_edit_search" -->
+    <!-- style="@style/edittext_style" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="0.90" -->
+    <!-- android:drawableLeft="@drawable/ic_search" -->
+    <!-- android:hint="Product Search" -->
+    <!-- android:imeOptions="actionSearch" -->
+    <!-- android:inputType="text" -->
+    <!-- android:singleLine="true" -->
+    <!-- android:textColor="@color/title_text_color" -->
+    <!-- android:textSize="15sp" -->
+    <!-- android:typeface="sans" > -->
+
+
+    <!-- </AutoCompleteTextView> -->
+
+
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="0.5" -->
+    <!-- android:gravity="center|right" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageButton -->
+    <!-- android:id="@+id/newcustomerbutton" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_gravity="right" -->
+    <!-- android:background="@drawable/right_separator" -->
+    <!-- android:contentDescription="@string/title_bar_right_button" -->
+    <!-- android:src="@drawable/ic_prod_new" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/search_btn_layout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_marginLeft="9dp" -->
+    <!-- android:gravity="center|right" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageButton -->
+    <!-- android:id="@+id/search" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/right_separator" -->
+    <!-- android:contentDescription="@string/title_bar_right_button" -->
+    <!-- android:src="@drawable/ic_find" /> -->
+
+
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+<!--         <TableRow -->
+<!--             android:id="@+id/tableRow1" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:paddingLeft="5dip" -->
+<!--             android:paddingRight="5dip" > -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/ed_custcode" -->
+<!--                 style="@style/edittext_style" -->
+<!--                 android:layout_width="0dip" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_margin="5dip" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:ems="10" -->
+<!--                 android:hint="CustCode" -->
+<!--                 android:imeOptions="actionDone" -->
+<!--                 android:inputType="text" > -->
+<!--             </EditText> -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/ed_custname" -->
+<!--                 style="@style/edittext_style" -->
+<!--                 android:layout_width="0dip" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_margin="5dip" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:ems="10" -->
+<!--                 android:hint="CustName" -->
+<!--                 android:imeOptions="actionDone" -->
+<!--                 android:inputType="text" -->
+<!--                 android:visibility="gone" > -->
+<!--             </EditText> -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/ed_areacode" -->
+<!--                 style="@style/edittext_style" -->
+<!--                 android:layout_width="0dip" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_margin="5dip" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:drawableRight="@drawable/ic_search" -->
+<!--                 android:ems="10" -->
+<!--                 android:hint="AreaCode" -->
+<!--                 android:imeOptions="actionDone" -->
+<!--                 android:inputType="text" /> -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/ed_description" -->
+<!--                 style="@style/edittext_style" -->
+<!--                 android:layout_width="0dip" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_margin="5dip" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:ems="10" -->
+<!--                 android:hint="AreaDescription" -->
+<!--                 android:imeOptions="actionDone" -->
+<!--                 android:inputType="text" -->
+<!--                 android:visibility="gone" /> -->
+<!--         </TableRow> -->
+
+<LinearLayout
+            android:id="@+id/codelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/ed_custcode"
+                style="@style/edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"          
+                android:focusable="true"
+                android:hint="Customer Code"
+                android:imeOptions="actionDone"
+                android:inputType="text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/ed_custname"
+                style="@style/edittext_style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="CustName"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:visibility="gone" >
+            </EditText>
+
+            <requestFocus />
+        </LinearLayout>
+<LinearLayout
+            android:id="@+id/statuslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/ed_areacode"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:drawableRight="@drawable/ic_search"
+                android:ems="10"
+                android:hint="AreaCode"
+                android:imeOptions="actionDone"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/ed_description"
+                style="@style/edittext_style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="AreaDescription"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/ed_vancode"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:drawableRight="@drawable/ic_search"
+                android:ems="10"
+                android:hint="Van/Driver"
+                android:imeOptions="actionDone"
+                android:inputType="text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/ed_vanname"
+                style="@style/edittext_style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Van/Driver"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:visibility="gone" >
+            </EditText>
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/bt_search"
+                style="@style/button_style"
+                android:layout_width="0dip"
+                android:layout_height="35dip"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:text="Search" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/customer_listheader"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/list_header_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Customer Code"
+            android:textColor="@color/title_text_color"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Customer Name"
+            android:textColor="@color/title_text_color"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Credit"
+            android:textColor="@color/title_text_color"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Paid"
+            android:textColor="@color/title_text_color"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Balance"
+            android:textColor="@color/title_text_color"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical" >
+
+        <com.winapp.FastScroll.FastSearchListView
+        android:id="@+id/customer_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

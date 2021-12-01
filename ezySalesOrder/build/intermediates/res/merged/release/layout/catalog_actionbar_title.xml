@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="39dp"
+    android:gravity="center|right" >
+
+    <ImageButton
+        android:id="@+id/custom_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/cart_img"
+        android:background="@null"
+        android:contentDescription="@string/title_bar_right_button"
+        android:src="@mipmap/grid_1" />
+
+    <ImageButton
+        android:id="@+id/cart_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/title_bar_right_button"
+        android:src="@mipmap/cart_ic"
+        android:visibility="visible"/>
+    
+    <ImageButton
+        android:id="@+id/right_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/title_bar_right_button"
+        android:src="@mipmap/ic_save_img"
+        android:visibility="gone"/>
+    
+    <ImageButton
+        android:id="@+id/right_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/title_bar_right_button"
+        android:src="@mipmap/ic_find"
+        android:visibility="gone"/>
+    
+      <TextView
+        android:id="@+id/cart_txt"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_alignRight="@+id/cart_img"
+        android:layout_alignTop="@+id/cart_img"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        android:typeface="sans"
+        android:background="@mipmap/round"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/custom_View"
+        android:layout_centerVertical="true"
+        
+        android:layout_alignTop="@+id/custom_View"      
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/custom_View"
+        android:layout_toLeftOf="@+id/custom_View"
+        android:background="@drawable/right_separator"
+        android:contentDescription="@string/title_bar_right_button"
+        android:src="@mipmap/ic_find"
+        android:visibility="visible" />
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_edit_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/clear"
+        android:drawableLeft="@drawable/ic_search"
+        android:ems="10"
+        android:background="@drawable/edittext_bg"
+        android:textColorHint="@color/hint_text_color"
+        android:gravity="left|center_vertical"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginTop="5dip"
+        android:hint="Product Search"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/edittext_text_color"
+        android:typeface="sans"
+        android:visibility="gone" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <ImageButton
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/custom_View"
+        android:background="@null"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/title_bar_right_button"
+        android:src="@mipmap/ic_clear"
+        android:visibility="gone" />
+
+</RelativeLayout>

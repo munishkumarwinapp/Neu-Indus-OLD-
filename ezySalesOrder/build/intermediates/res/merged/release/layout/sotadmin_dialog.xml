@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dip" >
+
+        <EditText
+            android:id="@+id/sl_username"
+            style="@style/login_edittext_style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:layout_weight="1.5"
+            android:drawableLeft="@mipmap/ic_user"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="ID"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/title_text_color" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip" >
+
+        <EditText
+            android:id="@+id/sl_password"
+            style="@style/login_edittext_style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:layout_weight="1.5"
+            android:drawableLeft="@mipmap/ic_password"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/title_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

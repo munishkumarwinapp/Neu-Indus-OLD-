@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pressed_color">#c8c9cc</color>
+    <color name="default_color">#EBECEF</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#f9f9f9</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="textview_text_color">#035891</color>
+    <color name="textview_hint_text_color">#BFBFBF</color>
+    <color name="list_item_bg_selected">#9ce9bb</color>
+    <color name="list_item_bg_normal">#FFFFFF</color>
+    <color name="title_text_color">#FFFFFF</color>
+    <color name="edittext_text_color">#000000</color>
+    <color name="hint_text_color">#898989</color>
+    <color name="checkbox_text_color">#4B4B4C</color>
+    <color name="list_header_separator_color">#AEAEAF</color>
+    <color name="list_item_bg_pressed">#93F4BA</color>
+    <color name="slidelist_background">#DCDEE3</color>
+    <color name="list_content_text_color">#035891</color>
+    <color name="login_edittext_text_color">#FFFFFF</color>
+    <color name="login_hint_text_color">#cccccc</color>
+    <color name="list_header_color">#626776</color>
+    <color name="list_divider">#eaeaea</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="list_background_pressed">#2379B6</color>
+    <color name="list_background_add">#FAFAFA</color>
+    <color name="list_background_even">#FFFFFF</color>
+    <color name="list_background_even_text">#035994</color>
+    <color name="list_background_add_text">#646464</color>
+    <color name="tab_content_text_color">#3E4041</color>
+    <color name="catalog_exp_header">#626776</color>
+    <color name="catalog_exp_child">#EEF0ED</color>
+    <color name="list_item_red_pressed">#FF7979</color>
+    <color name="list_item_red_selected">#FF8A8A</color>
+    <color name="list_item_redlight_selected">#FFDBDB</color>
+    <color name="white">#FFF</color>
+    <color name="mer_blue">#5c96e0</color>
+    <color name="l_blue">#909BAA</color>
+    <color name="d_blue">#6D7B92</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="d_gray">#666</color>
+    <color name="black">#000</color>
+    <color name="blue">#33B5E5</color>
+    <color name="light_blue">#626776</color>
+    <color name="dark_blue">#626776</color>
+    <color name="crm_text">#43466f</color>
+    <color name="view_line">#e39f9f</color>
+    <!--
+     <color name="filter_background">#434343</color>
+     <color name="filter_button">#626776</color>
+
+    -->
+    <color name="filter_title">#32b6e7</color>
+    <color name="Red">#bc202b</color>
+    <color name="list_seletor">#b4d8f1</color>
+    <color name="list_1">#83afe5</color>
+    <color name="list_2">#82d176</color>
+    <color name="list_3">#feb359</color>
+    <color name="list_4">#f4716b</color>
+    <color name="list_item_bg_read">#f1f1f1</color>
+    <color name="list_item_bg_unread">#ffffff</color>
+    <color name="list_item_text_unread">#0682c2</color>
+
+    <color name="out_color">#9AE9A7</color>
+    <color name="in_color">#F085B1</color>
+</resources>

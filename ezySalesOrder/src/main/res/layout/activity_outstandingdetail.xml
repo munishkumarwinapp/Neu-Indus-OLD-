@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outstanding_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/codelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/ed_custcode"
+                style="@style/edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:drawableRight="@drawable/ic_search"
+                android:focusable="true"
+                android:hint="Customer Code"
+                android:imeOptions="actionDone"
+                android:inputType="text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/ed_custname"
+                style="@style/edittext_style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="CustName"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:visibility="gone" >
+            </EditText>
+
+            <requestFocus />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statuslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/ed_areacode"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:drawableRight="@drawable/ic_search"
+                android:ems="10"
+                android:hint="AreaCode"
+                android:imeOptions="actionDone"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/ed_description"
+                style="@style/edittext_style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="AreaDescription"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/ed_vancode"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:drawableRight="@drawable/ic_search"
+                android:ems="10"
+                android:hint="Van/Driver"
+                android:imeOptions="actionDone"
+                android:inputType="text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/ed_vanname"
+                style="@style/edittext_style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Van/Driver"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:visibility="gone" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Datelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/starteditTextDate"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:editable="false"
+                android:ems="10"
+                android:hint="Start Date" />
+
+            <EditText
+                android:id="@+id/endeditTextDate"
+                style="@style/edittext_style"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.06"
+                android:drawableRight="@mipmap/ic_calendar"
+                android:editable="false"
+                android:ems="10"
+                android:hint="End Date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_search"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:text="Search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:background="@drawable/header_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="7dp"
+            android:gravity="center|left" >
+
+            <ImageView
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:layout_margin="3dip"
+                android:background="@mipmap/receipt_header"
+                android:contentDescription="" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="3dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Invoice"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Date"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/right_separator"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="3dip"
+                android:background="@mipmap/clock"
+                android:contentDescription="" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Overdue"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Days"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/right_separator"
+            android:gravity="center|right"
+            android:paddingRight="12dp" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_margin="3dip"
+                android:background="@mipmap/cash"
+                android:contentDescription="" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Overdue"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Amount"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+         >
+
+        <ListView
+            android:id="@+id/outstanding_detail_list"
+            style="@style/listview_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:background="#f0f1f4" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

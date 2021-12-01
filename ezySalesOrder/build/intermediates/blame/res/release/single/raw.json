@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\raw\\zxing_beep.ogg",
+        "source": "D:\\Projects\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\bundles\\default\\res\\raw\\zxing_beep.ogg"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\raw\\gtm_analytics",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\d5ed6e37de3cd1355358061bc0433ebcb1375ca2\\output\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\raw\\gtm_analytics",
+        "source": "C:\\Users\\Sathish\\.android\\build-cache\\d5ed6e37de3cd1355358061bc0433ebcb1375ca2\\output\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\ezySalesOrder\\build\\intermediates\\res\\merged\\release\\raw\\zxing_beep.ogg",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\zxing-android-embedded\\build\\intermediates\\bundles\\default\\res\\raw\\zxing_beep.ogg"
+    }
+]

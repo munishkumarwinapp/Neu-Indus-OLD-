@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/right_separator"
+        android:contentDescription="@string/title_bar_right_button"
+        android:src="@mipmap/ic_find" />
+
+    <TextView
+        android:id="@+id/customer_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="25dip"
+        android:gravity="center"
+        android:text="CustomerList"
+        android:textColor="@color/title_text_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:visibility="visible" />
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_edit_search"
+        style="@style/search_edittext_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/search"
+        android:layout_toLeftOf="@+id/newcustomerbutton"
+        android:drawableLeft="@drawable/ic_search"
+        android:ems="10"
+        android:hint="Product Search"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/edittext_text_color"
+        android:textSize="15sp"
+        android:typeface="sans"
+        android:visibility="gone" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <ImageButton
+        android:id="@+id/newcustomerbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search"
+        android:layout_alignTop="@+id/search"
+        android:layout_toLeftOf="@+id/search"
+        android:background="@drawable/right_separator"
+        android:contentDescription="@string/title_bar_right_button"
+        android:src="@mipmap/ic_prod_new" />
+
+</RelativeLayout>

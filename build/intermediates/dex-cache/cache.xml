@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\libs\pinchzoom.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a4def992b1f41525748db059dfdd21322cc3157e">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\2\pinchzoom_f3e7a1774a000af7a026b592d1c79468359fc6d8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\slidemenulibrary\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="60572b884081cee9cb37a47288c5b4cb5ed21458">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\4\classes_32405c4dc37f2cee3490dbb4f54a6554787b2c62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\libs\com.datecs.api.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4d855249c21de5b98106d78241f798aa330ed98a">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\2\com.datecs.api_6a9b5f4eba96d1d8e4e4b1fbaf28c77b0bae5029\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\0ff239fdb73679c0222a7a1eb3b2329f8817f94f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d9d66dceb74be0df47e633900d792c66c173d0f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\ce86bc922bb6c5f14add6503e4d73b86dd46861f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c33d9740abad32585f398546b90768bc8a06694c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\4c540fcae0bfbac5b4c30171ab2b3693950d5f7f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a0f90901433129fbae6677f8dbe6079198b08922">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_730fde1f4ab573312f93cc7a01c13b89fa253839\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\8ef5d76d6ba96c3df954b34025ba3d229aafb381\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_387a71f7ea55759a0ee109dc04d8834f9970df97\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\25.1.0\64cb6b229a8bdfd907bc8dd46839a0053e4c018d\support-annotations-25.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_2003f1d00136923a61e017de0befe2f9688dca35\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\13bfc453a63e02d21d79763a33bf38673276f84a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_66077fe49200354bf81a3cd8121f545ec6996e8c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.gradle\caches\modules-2\files-2.1\com.android.support.constraint\constraint-layout-solver\1.1.3\bde0667d7414c16ed62d3cfe993cff7f9d732373\constraint-layout-solver-1.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bde0667d7414c16ed62d3cfe993cff7f9d732373">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.1.3_112ebe10ffbb8aed284d143b19ce69adaf14f40a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.3.0\73c49077166faa4c3c0059c5f583d1d7bd1475fe\core-3.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.3.0_64dd87e49adc4be6563d238c85bf2f0988a694be\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\e9d15c6ff4a6402ebfb02efc47e6682c2d37d246\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6cfff3971f2dafd08b2a7846b6141c93832248ce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\mPChartLib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2565482e366e521e08ea4c1ee1b60f653ec22a57">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\4\classes_b480091d35dc80c67927f5aae384285bf6832579\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\libs\imagezoom.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="038f5a2082e2d8be1576402bf0e749204197d4f0">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\2\imagezoom_eb92e7f950da84359693a71d8d94cc9369b7089f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\ee17805011c036d120f0ba51a2e9b5c261d301c6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_419618a632473472ee205cc427beed15b03f8252\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\20dacaf0e17f3a58e574834f5e02b23f69b33070\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c2d26b506417b141e325a51f7b95dab2c28b91ad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\a37427acf40f5a8b6382e84fa86124aca0fbb80b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b515f01c1c6d3d5a4dc85560ebb0c257748b4fdc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\libs\mint-5.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="631f08ead30884985af1f7e32efcf2f5af1a898e">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\2\mint-5.0.0_c300850d4d9d365d1a975e831238ca0182a9e1f9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\89458ccf94a852e98296abed530d925990b924b6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0fbd9566945b42ca0be74db2b0e80fda9c7770a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\libs\ZSDK_ANDROID_API.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="52d89617167a4bf5e2185b45acf590d03e53f207">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\2\ZSDK_ANDROID_API_c3c73e5cf360264e565172af0accc27adc8e7854\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\libs\volley.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fe4b50d0b8af44fce7a238fe146c7a3957074aa5">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\2\volley_51bf977b96318fd34fec1e390ebbf0bc2a1e5210\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\7a23243a58b5f130c03171da631b4388fe2cef5a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4a95a84a38f811f7e85d7fe86d8b263a3eca7af5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\libs\crouton_library.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="387c67043221f8f50ce04ca2ca7f673093d2dcb3">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\2\crouton_library_d4661cd86ea1549420d0d0446f41ab4615b6b720\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\6dfdaef13702c5d5ba6693aae846c4cf2202d4d2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_38a4b49eb1c45b13acbba758d42a29810383cca9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\a36cc98191687f5ab5e2373a0c7b9615ba2669f3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4a21271cccce9b87ce71b4b5ec74b6d42277f487\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\eec5ad9a1e41f0dbb1b6d59fdf80f82ef9939f92\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_70a6b1f101746ee883e86223fee8197695a45593\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\9e3f702b0bf47d562c524924540685ad4d5af86b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ad8342f11b3ee2333121575abf3b3eee16e96493\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\libs\ksoap2-android-assembly-3.4.0-jar-with-dependencies.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="45fbaab416fb5cff992e662d1f7a83786f084fc3">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\2\ksoap2-android-assembly-3.4.0-jar-with-dependencies_e87d84ad280cd2c84d2d2d0589eb189b5445161e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\5384f3ff552ad033ccdd6b34606457c4292b96a4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b15c6ded887ad967e20bb335c1a121b253c04dce">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cde5e2a31741ef70a4a37f8646fe4a67727c1d53\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\e69118d313a88569d1ff6204f35386adfee90ef1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_162915a8d10302e4e1400d33e5b412a4193bd8b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\33405298b3a6472a951ed95a24a8c98313965ca6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_81fa9c70f732820a742a43c5c82fc962563ce081\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\c929010d86ece4c243777f36c864a336d36468ad\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c5260aa603dce3601042ad582e7d2ecb65ba165a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\44b41bdcde2dcd97c8fa73a327dffa4685417d1e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3a707668e5f0f695f493d0e863abd2572df9cc25\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\ec7cfc458d93997444966bad8a3125712ed0ad5e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0e433f154c6c167d115f93af3998b9d957bbeeac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\4829489eeb2957ec403cd2bbe3a7bfcd5bcd8549\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d2f77e254a28b500ec6a32686fd2bdc3db81cc44\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\actionbarsherlock\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="37a4ea83f4d8eeb999f003c53eeee4ea32aab22e">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\4\classes_1c9c57cdc48c72ad4e2b670e66b5f86286469c1b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\85df3ce68f2418e2931c8101b562d0185d3107b4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9b8994f08e4625c0bd19dd7edfd76fda4bf6a0b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\ea3d0a150a6826de2d80701697ef7bab4171057f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="36cea48a105ddeef047b645ab0f86f72993e8676">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b8f1c6173ed2301e30da55d2057be5b2e861400c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Winapp\SFA\SFA Project\SFA-master\zxing-android-embedded\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09a84c7e61aa7b33813f75d8791b7d68dd218920">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\4\classes_c65fa5d7eaccb2fc6bccf3674d1663620adf59cf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\53d28e97e5f24dd6f8f55fee168fa8233612b6e4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_705e0c81297827c987c75ec3d7964234831bd427\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\f5eef0f85bb6a24b41e306ac16ebfac29ab624ae\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a99136c1d870cd80ff3f2f1309795b1fc4730ce2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\45cada65fad05e39d0e5814015b6544ee8f59b6b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_92c432fb4214429fce300cf10c9114be17a47604\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\3399c1ed834647e2649dbc8843c97bdaf5c1a784\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d81149a929cee04ae42bf2607bb6f7410548d231\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\b7799828f62b5d17ec49d4f53b846266d6104d8a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2cb53cf36e16e3e97d6552ebd30550f987644c37\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\72f1362e54d84d871cbb5fc0e00630f6b6cac65f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_280a0ac2555db6f061d8089736f2ab8c9bf040c0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Munish kumar B\.android\build-cache\bb23f717bea352098c75250ea344f0891c8cef83\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="E:\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d065b7921eb486d9de878150534bc95531c8f390\classes.dex" />
+    </item>
+
+</items>

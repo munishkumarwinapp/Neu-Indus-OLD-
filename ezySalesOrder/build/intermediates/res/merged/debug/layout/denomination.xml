@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_item_style"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/list_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textColor="#262A33"
+                android:textSize="14dp"
+                android:layout_marginLeft="2dp"
+                android:text="0.00"
+                android:gravity="center"
+                android:singleLine="true"/>
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:textColor="#262A33"
+                android:textSize="14dp"
+                android:layout_marginLeft="2dp"
+                android:text="0.00"
+                android:gravity="center"
+                android:singleLine="true"/>
+
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:textColor="#262A33"
+                android:textSize="15dp"
+                android:text="0.00"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#3A6C8D"
+                android:textSize="16dp"
+                android:text="0.00"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+</LinearLayout>
+

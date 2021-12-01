@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="39dip" >
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/transferall"
+        android:gravity="center"
+        android:textColor="@color/title_text_color"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/swipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2dip"
+        android:layout_toLeftOf="@+id/filter"
+        android:background="@drawable/right_separator"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:src="@mipmap/ic_orientation"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2dip"
+        android:background="@drawable/right_separator"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:src="@mipmap/filter_ic"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/transferall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/filter"
+        android:layout_centerVertical="true"
+        android:background="@drawable/right_separator"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/image_selector"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/new_prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pageTitle"
+        android:layout_alignTop="@+id/filter"
+        android:background="@drawable/right_separator"
+        android:src="@mipmap/ic_prod_new"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/edit_prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/right_separator"
+        android:src="@mipmap/ic_prod_edit"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/num_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pageTitle"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/swipe"
+        android:visibility="visible" >
+
+        <include layout="@layout/custom_keyboard" />
+
+        <ImageButton
+            android:id="@+id/priceTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/right_separator"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:src="@mipmap/price_green"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

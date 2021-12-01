@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:weightSum="8.7" >
+
+    <LinearLayout
+        android:id="@+id/inv_offlineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/offline_pattern_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scaleType="fitXY"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/customer_layout"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_margin="6dip"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center|left"
+                    android:hint="Customer Code :"
+                    
+                    android:textSize="14sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/customercode_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="6dip"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center|left"
+                    android:textSize="18sp"
+                    android:textColor="@color/textview_text_color"
+                    android:typeface="sans"
+                    android:textStyle="bold"
+                    android:visibility="visible" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/so_layout"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_margin="6dip"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center|left"
+                    android:hint="Order No :"
+                    
+                    android:textSize="14sp"
+                    android:typeface="sans" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/sono_txt"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight=".85"
+                    android:gravity="center|left"
+                    android:maxLines="2"
+                    android:textColor="@color/textview_text_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_margin="6dip"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="6dp"
+                android:gravity="center|left"
+                android:hint="Customer Name :"
+                
+                android:textSize="14sp"
+                android:typeface="sans" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/customername_txt"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight=".85"
+                android:gravity="center|left"
+                android:maxLines="2"
+                android:textColor="@color/textview_text_color"
+                android:textSize="18sp"
+                android:typeface="sans"
+                android:textStyle="bold" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listheaderlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:gravity="left"
+                android:paddingLeft="10dip"
+                android:paddingRight="1dip"
+                android:text="Product Code"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:gravity="left"
+                android:paddingLeft="10dip"
+                android:paddingRight="1dip"
+                android:text="Product Name"
+                android:layout_marginLeft="2dip"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_weight="1.3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="1dip"
+                android:paddingRight="1dip"
+                android:text="Carton"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="1dip"
+                android:paddingRight="1dip"
+                android:text="Loose"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="1dip"
+                android:paddingRight="1dip"
+                android:text="Qty"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Packed"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginRight="3dip"
+                android:typeface="sans" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="8.77"
+        android:orientation="vertical"
+        android:weightSum="8.5" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/list_header_separator_color"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listview"
+            style="@style/listview_style"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.50" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

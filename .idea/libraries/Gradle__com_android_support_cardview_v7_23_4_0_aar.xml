@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:cardview-v7:23.4.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/f924debd6d45996b3e71a1a15883f3f9720d2b88/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/f924debd6d45996b3e71a1a15883f3f9720d2b88/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/f924debd6d45996b3e71a1a15883f3f9720d2b88/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/10ebd23f5b2635b59d8f26cb00fd9ec38031ba3d/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/10ebd23f5b2635b59d8f26cb00fd9ec38031ba3d/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/10ebd23f5b2635b59d8f26cb00fd9ec38031ba3d/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/bb23f717bea352098c75250ea344f0891c8cef83/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/bb23f717bea352098c75250ea344f0891c8cef83/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/bb23f717bea352098c75250ea344f0891c8cef83/output/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

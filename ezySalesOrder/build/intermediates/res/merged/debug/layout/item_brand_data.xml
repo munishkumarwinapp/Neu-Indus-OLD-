@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/gray">
+
+        <LinearLayout
+            android:id="@+id/listdata_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/product_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="Product name"
+                        android:paddingTop="3dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dip"
+                        android:layout_weight=".1"
+                        android:layout_height="match_parent"
+                        android:text="Code :"
+                        android:textSize="10sp"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:id="@+id/product_code"
+                        android:layout_width="0dip"
+                        android:layout_weight="0.6"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:textSize="13sp"
+                        android:text="aaaaaaaaaa"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>

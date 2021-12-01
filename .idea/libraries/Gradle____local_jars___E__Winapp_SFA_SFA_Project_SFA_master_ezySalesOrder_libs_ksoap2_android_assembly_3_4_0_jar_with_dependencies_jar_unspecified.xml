@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_jars__:E.\Winapp\SFA\SFA Project\SFA-master\ezySalesOrder\libs\ksoap2-android-assembly-3.4.0-jar-with-dependencies.jar:unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ezySalesOrder/libs/ksoap2-android-assembly-3.4.0-jar-with-dependencies.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

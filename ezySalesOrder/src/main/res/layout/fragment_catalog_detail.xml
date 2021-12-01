@@ -1,0 +1,754 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/fragment_mainLayout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <!--
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/home_bg"
+            android:orientation="horizontal"
+            android:weightSum="5.7" >
+
+            <LinearLayout
+                android:id="@+id/back_btn_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/left_separator"
+                    android:contentDescription="@string/title_bar_left_button"
+                    android:src="@drawable/back_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pagetitle_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="3.8"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/product_Title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.88"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:text="Product Detail"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/auto_search_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_weight="4.5"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_edit_search"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.90"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:hint="Product Search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="15sp"
+                    android:typeface="sans" >
+                </AutoCompleteTextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cart_btn_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/pricetag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/right_separator"
+                    android:contentDescription="@string/title_bar_right_button"
+                    android:src="@drawable/price_green"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:id="@+id/cart_layout"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:visibility="visible" >
+
+                    <ImageButton
+                        android:id="@+id/cart_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/right_separator"
+                        android:contentDescription="@string/title_bar_right_button"
+                        android:src="@drawable/cart_ic" />
+
+                    <TextView
+                        android:id="@+id/cart_txt"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="1dp"
+                        android:background="@drawable/round"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="11sp"
+                        android:typeface="sans" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1.5"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/load"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dip"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:visibility="gone" >
+
+                        <ProgressBar
+                            android:id="@+id/progressbar"
+                            android:layout_width="22dip"
+                            android:layout_height="22dip"
+                            android:layout_gravity="center"
+                            android:indeterminateDrawable="@drawable/blue_progress"
+                            android:visibility="visible" >
+                        </ProgressBar>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dip"
+                            android:src="@mipmap/ic_loading_img" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/image_Layout"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".9"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_margin="5dip"
+                            android:layout_weight="1.8"
+                            android:background="@drawable/image_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="visible" >
+
+                            <ImageView
+                                android:id="@+id/selected_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp"
+                                android:layout_margin="1dip"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/image"
+                                android:src="@mipmap/no_image"
+                                android:visibility="visible"/>
+
+                            <ImageSwitcher
+                                android:id="@+id/switcher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:src="@mipmap/no_image" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/productName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dip"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:padding="2dp"
+                            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                            android:textColor="#0A66A7"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/gallery_Layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_marginTop="2dip"
+                            android:layout_weight="1.5"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="visible" >
+
+                            <ImageView
+                                android:id="@+id/left_arrow_imageview"
+                                android:layout_width="0dip"
+                                android:layout_height="30dip"
+                                android:layout_marginLeft="2dip"
+                                android:layout_weight=".5"
+                                android:contentDescription="@string/image"
+                                android:src="@mipmap/arrow_left_disabled"
+                                android:visibility="visible" />
+
+                            <Gallery
+                                android:id="@+id/gallery"
+                                android:layout_width="110dp"
+                                android:layout_height="140dp"
+                                android:visibility="visible" />
+
+                            <com.winapp.util.HorizontalListView
+                                android:id="@+id/listView"
+                                android:layout_width="0dip"
+                                android:layout_height="100dip"
+                                android:layout_weight="2"
+                                android:background="@drawable/image_bg"
+                                android:visibility="gone" >
+                            </com.winapp.util.HorizontalListView>
+
+                            <ImageView
+                                android:id="@+id/right_arrow_imageview"
+                                android:layout_width="0dip"
+                                android:layout_height="30dip"
+                                android:layout_marginRight="2dip"
+                                android:layout_weight=".5"
+                                android:contentDescription="@string/image"
+                                android:src="@mipmap/arrow_right_enabled"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="0.8"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dip"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/textView5"
+                                    android:layout_width="0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".9"
+                                    android:text="@string/product_code"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/productCode"
+                                    android:layout_width="0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/text_disable" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="0.7"
+                                android:gravity="center"
+                                android:padding="5dip"
+                                android:text="@string/specification" />
+
+                            <TextView
+                                android:id="@+id/specification"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_margin="5dip"
+                                android:layout_marginBottom="1dip"
+                                android:layout_weight="1"
+                                android:background="@drawable/text_disable"
+                                android:padding="5dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/detail_layout"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <LinearLayout
+                            android:id="@+id/select_carton_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1.1"
+                            android:gravity="center"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".98"
+                                android:text="@string/select_carton_qty" />
+
+                            <Spinner
+                                android:id="@+id/spinner"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".8"
+                                android:background="@drawable/spinner_bg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/cqty_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/carton" />
+
+                            <ImageButton
+                                android:id="@+id/cqty_minus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:src="@mipmap/active_minus" />
+
+                            <EditText
+                                android:id="@+id/cqty_ed"
+                                style="@style/edittext_style"
+                                android:layout_width="0dip"
+                                android:layout_height="35dip"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:text="0"
+                                android:textSize="13sp" >
+                            </EditText>
+
+                            <ImageButton
+                                android:id="@+id/cqty_plus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:background="@null"
+                                android:src="@mipmap/active_plus" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:visibility="visible" >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/loose_qty" />
+
+                            <ImageButton
+                                android:id="@+id/lqty_minus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:contentDescription="@string/image"
+                                android:src="@mipmap/active_minus" />
+
+                            <EditText
+                                android:id="@+id/lqty_ed"
+                                style="@style/edittext_style"
+                                android:layout_width="0dip"
+                                android:layout_height="35dip"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:text="0"
+                                android:textSize="13sp" >
+                            </EditText>
+
+                            <ImageButton
+                                android:id="@+id/lqty_plus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:background="@null"
+                                android:contentDescription="@string/image"
+                                android:src="@mipmap/active_plus" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/units" />
+
+                            <ImageButton
+                                android:id="@+id/qty_minus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:contentDescription="@string/image"
+                                android:src="@mipmap/active_minus" />
+
+                            <EditText
+                                android:id="@+id/qty_ed"
+                                style="@style/edittext_style"
+                                android:layout_width="0dip"
+                                android:layout_height="35dip"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:text="0"
+                                android:textSize="13sp" >
+                            </EditText>
+
+                            <ImageButton
+                                android:id="@+id/qty_plus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:background="@null"
+                                android:contentDescription="@string/image"
+                                android:src="@mipmap/active_plus" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/foc_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/foc" />
+
+                            <ImageButton
+                                android:id="@+id/fqty_minus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:contentDescription="@string/image"
+                                android:src="@mipmap/active_minus" />
+
+                            <EditText
+                                android:id="@+id/focqty"
+                                style="@style/edittext_style"
+                                android:layout_width="0dip"
+                                android:layout_height="35dip"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:padding="5dip"
+                                android:singleLine="true"
+                                android:text="0"
+                                android:textSize="13sp" />
+
+                            <ImageButton
+                                android:id="@+id/fqty_plus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:background="@null"
+                                android:contentDescription="@string/image"
+                                android:src="@mipmap/active_plus" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Exchange" />
+
+                            <ImageButton
+                                android:id="@+id/exqty_minus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:contentDescription="@string/image"
+                                android:src="@mipmap/active_minus" />
+
+                            <EditText
+                                android:id="@+id/exchangeqty"
+                                style="@style/edittext_style"
+                                android:layout_width="0dip"
+                                android:layout_height="35dip"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:padding="5dip"
+                                android:singleLine="true"
+                                android:text="0"
+                                android:textSize="13sp" />
+
+                            <ImageButton
+                                android:id="@+id/exqty_plus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:background="@null"
+                                android:contentDescription="@string/image"
+                                android:src="@mipmap/active_plus" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/cartonPrice_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:visibility="visible" >
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/carton_price" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:src="@mipmap/active_minus"
+                                android:visibility="invisible" />
+
+                            <EditText
+                                android:id="@+id/cprice"
+                                style="@style/edittext_style"
+                                android:layout_width="0dip"
+                                android:layout_height="35dip"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:padding="5dip"
+                                android:text="0"
+                                android:textSize="13sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:background="@null"
+                                android:src="@mipmap/active_minus"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Price_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/price" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:src="@mipmap/active_minus"
+                                android:visibility="invisible" />
+
+                            <EditText
+                                android:id="@+id/lprice"
+                                style="@style/edittext_style"
+                                android:layout_width="0dip"
+                                android:layout_height="35dip"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:padding="5dip"
+                                android:singleLine="true"
+                                android:text="0"
+                                android:textSize="13sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:background="@null"
+                                android:src="@mipmap/active_minus"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/pcspercarton" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:src="@mipmap/active_minus"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/pcspercarton"
+                                android:layout_width="0dip"
+                                android:layout_height="35dip"
+                                android:layout_marginLeft="3dip"
+                                android:layout_weight="1"
+                                android:background="@drawable/text_disable"
+                                android:gravity="center"
+                                android:padding="5dip"
+                                android:text="0"
+                                android:textSize="13sp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:background="@null"
+                                android:src="@mipmap/active_minus"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="0.8"
+                            android:gravity="center" >
+
+                            <Button
+                                android:id="@+id/add"
+                                android:layout_width="70dip"
+                                android:layout_height="32dip"
+                                android:layout_marginBottom="2dip"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/add_cart_bg"
+                                android:gravity="center"
+                                android:text="@string/add" />
+
+                            <Button
+                                android:id="@+id/back"
+                                android:layout_width="70dip"
+                                android:layout_height="32dip"
+                                android:layout_marginBottom="2dip"
+                                android:layout_marginLeft="8dip"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/add_cart_bg"
+                                android:gravity="center"
+                                android:text="Back" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

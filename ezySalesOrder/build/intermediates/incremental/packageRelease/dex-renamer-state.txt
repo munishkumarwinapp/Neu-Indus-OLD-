@@ -1,0 +1,7 @@
+#Wed Feb 19 16:18:20 IST 2020
+base.0=D\:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main\\classes.dex
+base.1=D\:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main
+file.0=D\:\\Projects\\SFA Source\\Source\\ezySalesOrder\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main\\classes2.dex

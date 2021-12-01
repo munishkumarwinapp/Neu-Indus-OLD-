@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_barcode_scanner.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\zxing-android-embedded\\res\\layout\\zxing_barcode_scanner.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_barcode_scanner.xml",
+        "source": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\zxing-android-embedded\\res\\layout\\zxing_barcode_scanner.xml"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_capture.xml",
+        "source": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\zxing-android-embedded\\res\\layout\\zxing_capture.xml"
+    },
+    {
+        "merged": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_barcode_scanner.xml",
+        "source": "E:\\Winapp\\SFA\\SFA Project\\SFA-master\\zxing-android-embedded\\res\\layout\\zxing_barcode_scanner.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_capture.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\zxing-android-embedded\\res\\layout\\zxing_capture.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_barcode_scanner.xml",
+        "source": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\zxing-android-embedded\\res\\layout\\zxing_barcode_scanner.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_capture.xml",
+        "source": "C:\\Android Projects\\Winnapp\\SFA Source\\SFA Source\\Source\\zxing-android-embedded\\res\\layout\\zxing_capture.xml"
+    },
+    {
+        "merged": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_capture.xml",
+        "source": "D:\\Projects\\ezySalesOrder Android Studio\\Source\\zxing-android-embedded\\res\\layout\\zxing_capture.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_capture.xml",
+        "source": "C:\\Android Projects\\Winnapp\\CompanyProjects\\SFA Source\\SFA Source\\Source\\zxing-android-embedded\\res\\layout\\zxing_capture.xml"
+    },
+    {
+        "merged": "D:\\Projects\\SFA Source\\Source\\zxing-android-embedded\\build\\intermediates\\res\\merged\\release\\layout\\zxing_barcode_scanner.xml",
+        "source": "D:\\Projects\\SFA Source\\Source\\zxing-android-embedded\\res\\layout\\zxing_barcode_scanner.xml"
+    }
+]
