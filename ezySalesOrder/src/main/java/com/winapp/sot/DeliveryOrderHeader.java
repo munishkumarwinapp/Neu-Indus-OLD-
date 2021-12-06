@@ -182,8 +182,6 @@ public class DeliveryOrderHeader extends SherlockFragmentActivity implements
 	private double mLatitude=0, mLongitude=0;
 	private LocationManager locationManager;
 	private LinkedHashSet<String> lhs;
-//	private ArrayList<String> mDateList = new ArrayList<String>();
-//	private ArrayList<String> assigndateArr = new ArrayList<String>();
 	private ArrayList<String> uniqueAssignDateArr;
 	private static final String JPEG_FILE_PREFIX = "IMG_";
 	private static final String JPEG_FILE_SUFFIX = ".jpg";
